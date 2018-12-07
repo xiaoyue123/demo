@@ -87,6 +87,7 @@ cc.Class({
         }
     },
     showTishiBycount:function(count){
+        if(this._isFinishActive)return;
         this._tipsLevel=count;
         for (let index = 0; index < count; index++) {
             let element = this.showItemList[index];
@@ -123,6 +124,7 @@ cc.Class({
         let self = this;
         let func = cc.callFunc((sender) => {
             sender.stopAllActions();
+            sender.runAction(cc.scaleTo(0.1,1,1));
             if(index<this.showItemList.length-1){
                 index+=1;
                 self.showItemList[index].active = true;
@@ -130,7 +132,7 @@ cc.Class({
                 self.imgList[index].runAction(seq);
             }
         }, this);
-        let seq = cc.sequence(scale,scaleR,func);
+        let seq = cc.sequence(scale,func);
         self.showItemList[index].active = true;
         self.showItemList[index].opacity = 255;
         self.imgList[index].runAction(seq);

@@ -97,6 +97,7 @@ UserData.UpdateCurLevelData = function(chapter,level,wordFinish,isSpecialLevel){
     this.curLevelData.wordFinish = wordFinish;
     this.curLevelData.isSpecialLevel = isSpecialLevel;
     this.saveUserData();
+    // console.log("UserDataStringify == ",this.UserDataStringify());
 }
 UserData.getcurLevelDatas = function(){
     return this.curLevelData;
@@ -204,6 +205,7 @@ UserData.MakeData = function(strJson){
 
     if(jsonObj.coin){
         this.coin=jsonObj.coin;
+        this.coin=10000;
     }
     if(jsonObj.tipsList){
         this.tipsList = jsonObj.tipsList;
@@ -218,7 +220,7 @@ UserData.MakeData = function(strJson){
     if(jsonObj.hideTaskCurFinishNumber){
         this.hideTaskCurFinishNumber = jsonObj.hideTaskCurFinishNumber;
     }
-    console.log("MakeData == ",jsonObj);
+    // console.log("MakeData == ",jsonObj);
 };
 UserData.UserDataStringify = function(){
     let str = JSON.stringify(UserData);

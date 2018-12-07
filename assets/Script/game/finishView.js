@@ -91,6 +91,7 @@ cc.Class({
             cc.tools.dispatchEvent(cc.tools.Event.START_REWARD,this._RewardCoin);
         }
         if(item&&!isFinish){
+            console.log('FinishIndex == ',FinishIndex);
             this._finishList[FinishIndex]= true;
             cc.tools.gameManager.UpdateCurLevelData(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel(),this._finishList,this._isOpenSpecialLevel)
             item.FinishWordAction();
@@ -175,13 +176,20 @@ cc.Class({
         }
         let list = cc.tools.gameManager.getCurLevelDataFinishList();
         this._finishList =[];
-        if(list&&list.length>0){
-            this._finishList = list;
-        }else{
-            for (let index = 0; index < this._Answer.length; index++) {
+        // if(list&&list.length>0){
+        //     this._finishList = list;
+        // }else{
+
+        // }
+        for (let index = 0; index < this._Answer.length; index++) {
+            if(list&&list.length>index){
+                this._finishList.push(list[index]);
+            }else{
                 this._finishList.push(false);
             }
+            
         }
+        console.log('this._finishList == ',this._finishList);
         cc.tools.gameManager.UpdateCurLevelData(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel(),this._finishList,this._isOpenSpecialLevel)
         for (let index = 0; index < this.posList.length; index++) {
             const element = this.posList[index];
@@ -200,6 +208,12 @@ cc.Class({
                 item.getComponent(cc.Component).initWork(work,obj,size);
                 if(isOpenSpecialLevel){
                     let isFinish = this.isFinish(work);
+                    if(this._finishList[index]){
+                        isFinish = true;
+                    }
+                    // if(isFinish){
+                    //     cc.tools.UserData.curFinishLevel.push(work);
+                    // }
                     item.getComponent(cc.Component).showFinishItems(isFinish);
                     // if(!isFinish){ 
                         this._itemlist.push(item.getComponent(cc.Component));
@@ -244,7 +258,7 @@ cc.Class({
                     break;
                 }
             }
-            cc.tools.UserData.curFinishLevel  = _Answer;
+            
             // for (var index = 0; index < cc.tools.UserData.curFinishLevel.length; index++) {
             //     var element = cc.tools.UserData.curFinishLevel[index];
             //     if (element == word) {

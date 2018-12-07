@@ -240,7 +240,7 @@ gameManager.isUpdateChapterAndLevel = function(){
     if(UserData.chapter>UserData.getcurLevelDatas().Chapter){
         return true;
     }else{
-        if(UserData.chapter==UserData.getcurLevelDatas().Chapter&&UserData.level>=UserData.getcurLevelDatas().Level&&!UserData.getcurLevelDatas().isSpecialLevel){
+        if(UserData.chapter==UserData.getcurLevelDatas().Chapter&&UserData.level>=UserData.getcurLevelDatas().Level){
             isUpdate = true;
         }
     }
