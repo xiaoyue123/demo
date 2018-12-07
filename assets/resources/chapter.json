@@ -1,30 +1,30 @@
 {
     "1":{
-        "levels":"1,2,3,4,5",
+        "levels":"1_2_3_4_5",
         "chapterReward":25,
         "HideLevel":"null",
         "name":"diyi"
     },
     "2":{
-        "levels":"6,7,8,9,10",
+        "levels":"6_7_8_9_10",
         "chapterReward":25,
         "HideLevel":1002,
         "name":"dier"
     },
     "3":{
-        "levels":"11,12,13,14,15",
+        "levels":"11_12_13_14_15",
         "chapterReward":25,
         "HideLevel":1003,
         "name":"disan"
     },
     "4":{
-        "levels":"16,17,18,19,20",
+        "levels":"16_17_18_19_20",
         "chapterReward":25,
         "HideLevel":1004,
         "name":"disi"
     },
     "5":{
-        "levels":"21,22,23,24,25",
+        "levels":"21_22_23_24_25",
         "chapterReward":25,
         "HideLevel":1005,
         "name":"diwu"

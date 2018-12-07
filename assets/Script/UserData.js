@@ -16,8 +16,70 @@ var UserData ={
             'Level':1,
             'wordFinish':[],
             'isSpecialLevel':false,
-        }
+        },
+        hideWords:[],
 };
+UserData.getHideWordByChapterAndlevel = function(chapter,level){
+    let itemlist = null;
+    for (let index = 0; index < this.hideWords.length; index++) {
+        const element = this.hideWords[index];
+        if(element.chapter==chapter&&element.level==level){
+            itemlist = element;
+            break;
+        }
+    }
+    if(!itemlist){
+        let list =[];
+        itemlist = {'chapter':chapter,'level':level,'list':list};
+        this.hideWords.push(itemlist);
+    }
+    return itemlist;
+}
+UserData.UpdatehideWords = function(hideList,word){
+    let _isHave = false;
+    for (let index = 0; index < hideList.list.length; index++) {
+        if(hideList.list[index]==word){
+            _isHave = true;
+            break;
+        }
+    }
+    if(!_isHave){
+        hideList.list.push(word);
+    }
+    this.saveUserData();
+    return _isHave;
+}
+// UserData.UpdatehideWords = function(chapter,level,word){
+//     let isHave = false;
+//     let itemlist = null;
+//     let _isHave = false;
+//     for (let index = 0; index < this.hideWords.length; index++) {
+//         const element = this.hideWords[index];
+//         if(element.chapter==chapter&&element.level==level){
+//             isHave = true;
+//             itemlist= element;
+//             break;
+//         }
+//     }
+//     if(!isHave){
+//         let list =[];
+//         list.push(word);
+//         itemlist = {'chapter':chapter,'level':level,'list':list};
+//         this.hideWords.push(itemlist);
+//     }else{
+//         for (let index = 0; index < itemlist.list.length; index++) {
+//             if(itemlist.list[index]==word){
+//                 _isHave = true;
+//                 break;
+//             }
+//         }
+//         if(!_isHave){
+//             itemlist.list.push(word);
+//         }
+//     }
+//     return isHave&&_isHave;
+// },
+
 UserData.getTipsByChapterAndlevel = function(chapter,level){
     let itemlist = null;
     for (let index = 0; index < this.tipsList.length; index++) {
@@ -30,10 +92,11 @@ UserData.getTipsByChapterAndlevel = function(chapter,level){
     return itemlist;
 }
 UserData.UpdateCurLevelData = function(chapter,level,wordFinish,isSpecialLevel){
-    this.curLevelData.Chapter = chapter;
-    this.curLevelData.Level = level;
+    this.curLevelData.Chapter = parseInt(chapter);
+    this.curLevelData.Level = parseInt(level);
     this.curLevelData.wordFinish = wordFinish;
     this.curLevelData.isSpecialLevel = isSpecialLevel;
+    this.saveUserData();
 }
 UserData.getcurLevelDatas = function(){
     return this.curLevelData;
@@ -69,6 +132,7 @@ UserData.UpdateTips = function(chapter,level,tipsIndex,tipsWord){
             itemlist.list.push(item);
         }
     }
+    this.saveUserData();
 },
 UserData.getTips = function(){
     return this.tipsList;
@@ -94,15 +158,18 @@ UserData.updatecurTipsLevel  = function(num){
 },
 UserData.UpdateCoin = function(coin){
     this.coin = coin;
+    this.saveUserData();
 },
 UserData.updatecurFinishLevel = function(list){
     this.curFinishLevel = list;
 },
 UserData.updateHideTaskCurFinishNumber = function(){
     this.hideTaskCurFinishNumber +=1;
+    this.saveUserData();
 },
 UserData.receiveHideTaskCurFinishNumber = function(num){
     this.hideTaskCurFinishNumber =num;
+    this.saveUserData();
 },
 UserData.getHideTaskCurFinishNumber = function(){
     return this.hideTaskCurFinishNumber;
@@ -134,33 +201,24 @@ UserData.MakeData = function(strJson){
     // strJson = strJson.replace(/\ +/g, "");//去掉空格
     // strJson = strJson.replace(/[\r\n]/g, "");//去掉回车换行
     var jsonObj = JSON.parse(strJson);
-    this.chapter=jsonObj.chapter;
-    this.level=jsonObj.level;
-    this.hp=jsonObj.hp;
-    this.attack=jsonObj.attack;
-    this.weapon=jsonObj.weapon;
-    this.hat=jsonObj.hat;
-    this.pet=jsonObj.pet;
-    this.coin=jsonObj.coin;
-    this.bag = jsonObj.bag;
-    this.guide =jsonObj.guide;
-    this.maxLevel = jsonObj.maxLevel;
-    this.reward = jsonObj.reward;
-    this.timer = jsonObj.timer;
-    if(jsonObj.bossCoolTime){
-        this.bossCoolTime = jsonObj.bossCoolTime;
-    }else{
-        this.bossCoolTime =null;
+
+    if(jsonObj.coin){
+        this.coin=jsonObj.coin;
     }
-    if(jsonObj.arrLevel){
-        this.arrLevel = jsonObj.arrLevel;
+    if(jsonObj.tipsList){
+        this.tipsList = jsonObj.tipsList;
     }
-    if(jsonObj.inviteNum){
-        this.inviteNum = jsonObj.inviteNum;
+    if(jsonObj.curLevelData){
+        this.curLevelData = jsonObj.curLevelData;
+        this.isOpenSpecialLevel = jsonObj.curLevelData.isSpecialLevel;
     }
-    if(jsonObj.birdNum){
-        this.birdNum = jsonObj.birdNum;
+    if(jsonObj.hideWords){
+        this.hideWords = jsonObj.hideWords;
     }
+    if(jsonObj.hideTaskCurFinishNumber){
+        this.hideTaskCurFinishNumber = jsonObj.hideTaskCurFinishNumber;
+    }
+    console.log("MakeData == ",jsonObj);
 };
 UserData.UserDataStringify = function(){
     let str = JSON.stringify(UserData);
@@ -168,10 +226,10 @@ UserData.UserDataStringify = function(){
 };
 UserData.saveUserData = function(){
     let str = this.UserDataStringify();
-    cc.sys.localStorage.setItem(_tools.GameConfig.SAVE_DATA_KEY,str);
+    cc.sys.localStorage.setItem( cc.gameConfig.SAVE_DATA_KEY,str);
 };
 UserData.IsHaveStorageData = function(){
-    var user_data = cc.sys.localStorage.getItem(_tools.GameConfig.SAVE_DATA_KEY);
+    var user_data = cc.sys.localStorage.getItem( cc.gameConfig.SAVE_DATA_KEY);
     // console.log("user_data",user_data);
     if(user_data==null||user_data=="null"||user_data==""||user_data==0||user_data==NaN){
         // cc.error("user_data",user_data);
@@ -180,14 +238,20 @@ UserData.IsHaveStorageData = function(){
     return true;
 };
 UserData.getStorageData = function(){
-    var user_data = cc.sys.localStorage.getItem(_tools.GameConfig.SAVE_DATA_KEY);
+    var user_data = cc.sys.localStorage.getItem( cc.gameConfig.SAVE_DATA_KEY);
     return user_data;
 };
 UserData.clearUserData = function(){
-    cc.sys.localStorage.setItem(_tools.GameConfig.SAVE_DATA_KEY,"");
+    cc.sys.localStorage.setItem( cc.gameConfig.SAVE_DATA_KEY,"");
+    this.MakeData(this.GetInItUserData());
 };
 UserData.GetInItUserData =function(){
-    let obj = {"chapter":1,"level":1,"hp":100,"maxLevel":1,"baseHit":0,"attack":1,"attack_delay":1000,"weapon":"weapon001","hat":"hat001","pet":"pet001","coin":1000,"crits":0.1,"critsHit":2,"attack_speed":1,"move_pix":3,"move_speed":1,"bag":{"weaponArray":[],"hatArray":[],"petArray":[]},"guide":[false,false,false,false,false,false],"reward":[0,0,0,0,0,0,0],"timer":"0000-00-00 00:00:00","inviteNum":0,"arrLevel":[0,0,0,0,0,0,0,0,0],"bossCoolTime":null,"birdNum":0};
+    let obj = {"coin":1,"tipsList":[],"curLevelData":{
+        'Chapter':1,
+        'Level':1,
+        'wordFinish':[],
+        'isSpecialLevel':false,
+    },"hideWords":[],"hideTaskCurFinishNumber":0};
     let str = JSON.stringify(obj);
     return str;
 };

@@ -20,6 +20,7 @@ cc.Class({
 
         let item1 =cc.instantiate(this.finishPosList);
         item1.parent = this.node;
+        this.initData();
     },
     clearData: function () {
         if (!this.IsLoading) {
@@ -43,7 +44,10 @@ cc.Class({
         target.loadTextLab.string = '资源加载中，请稍后('+Math.floor(target.loadResBar.progress*100)+')%...';
     },
     initData:function(){
-
+        if(tools.UserData.IsHaveStorageData()){
+            let data = tools.UserData.getStorageData();
+            tools.UserData.MakeData(data);
+        }
     },
     onLoad() {
         this.registerEvent();

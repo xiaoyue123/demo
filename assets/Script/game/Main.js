@@ -44,7 +44,12 @@ cc.Class({
         cc.tools.registerEventListener(cc.tools.Event.SHOW_SHOP,this,this.onShopMessage); 
     },
     init:function(){
+        // cc.tools.UserData.chapter = 
         cc.director.getCollisionManager().enabled = true;
+        let curLevelData = cc.tools.gameManager.getcurLevelDatas();
+        cc.tools.UserData.level = curLevelData.Level;
+        cc.tools.UserData.chapter = curLevelData.Chapter;
+        console.log("curLevelData == ",curLevelData);
         let self = this;
         this.loginNode.active = false;
         this.ItemNode.getComponent(cc.Component).init(self);

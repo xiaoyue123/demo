@@ -113,17 +113,27 @@ gameManager.addFinishList=function(word){
     }
     return isHave;
 }
-gameManager.addHideTaskList=function(word){
-    let isHave = false;
-    for (let index = 0; index < UserData.hideTask.length; index++) {
-        const element = UserData.hideTask[index];
-        if(element==word){
-            isHave = true;
-            break;
-        }
-    }
+gameManager.getHideWordByChapterAndlevel=function(chapter,level){
+    return UserData.getHideWordByChapterAndlevel(chapter,level);
+}
+gameManager.addHideTaskList=function(hideList,word){
+    // let isHave = false;
+    // for (let index = 0; index < UserData.hideTask.length; index++) {
+    //     const element = UserData.hideTask[index];
+    //     if(element==word){
+    //         isHave = true;
+    //         break;
+    //     }
+    // }
+    // if(!isHave){
+    //     UserData.hideTask.push(word);
+    //     UserData.UpdatehideWords(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel(),word);
+    //     cc.tools.gameManager.updateHideTaskCurFinishNumber();
+    // }
+    // let hideList =UserData.getHideWordByChapterAndlevel(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel());
+    // hideList.list.push('abc');
+    let isHave =UserData.UpdatehideWords(hideList,word);
     if(!isHave){
-        UserData.hideTask.push(word);
         cc.tools.gameManager.updateHideTaskCurFinishNumber();
     }
     return isHave;

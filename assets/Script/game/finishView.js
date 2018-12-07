@@ -32,6 +32,7 @@ cc.Class({
         _RewardCoin:0,
         _finishList:[],
         _isOpenSpecialLevel:false,
+        _hideList:[],
     },
     start () {
 
@@ -98,7 +99,7 @@ cc.Class({
         let isHideTask = this.isHideTask(work);
         let isHideHave = false;
         if(isHideTask){
-             isHideHave = cc.tools.gameManager.addHideTaskList(work);
+             isHideHave = cc.tools.gameManager.addHideTaskList(this._hideList,work);
         }
         let obj ={'isRight':isRight,
         'isfinish':isFinish,
@@ -164,6 +165,7 @@ cc.Class({
         this._hideTask = workData.Hidetask.split(",");
         this._RewardWord = workData.RewardWord.split(",");
         this.initRewardWord();
+        this._hideList = cc.tools.gameManager.getHideWordByChapterAndlevel(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel());
         this._itemlist =[];
         let posList = cc.tools.gameManager.getFinishWordListPos(this._Answer.length);
         let curLevelData = cc.tools.gameManager.getcurLevelDatas();

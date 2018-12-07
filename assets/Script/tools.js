@@ -440,10 +440,10 @@ var tools = {
     },
     ClearData:function(){
         this.UserData.clearUserData();
-        this.UserData.clearRewardData();
-        this.UserData.clearOnLineRewardData();
-        cc.director.getScheduler().unscheduleAllForTarget(this.getBattleComp());
-        cc.director.loadScene(cc.tools.GameConfig.BATTLE_SCENE);
+        // this.UserData.clearRewardData();
+        // this.UserData.clearOnLineRewardData();
+        // cc.director.getScheduler().unscheduleAllForTarget(this.getBattleComp());
+        // cc.director.loadScene(cc.tools.GameConfig.BATTLE_SCENE);
     },
     floatTobit2:function(FloatStr){
         var a = FloatStr.toString();

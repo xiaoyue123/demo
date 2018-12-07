@@ -29,5 +29,8 @@ cc.Class({
     },
     onShop:function(){
         cc.tools.dispatchEvent(cc.tools.Event.SHOW_SHOP);
+    },
+    clearData:function(){
+        cc.tools.ClearData();
     }
 });

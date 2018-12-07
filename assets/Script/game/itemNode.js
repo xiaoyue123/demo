@@ -56,8 +56,6 @@ cc.Class({
     },
     inintAllFinishItems:function(){
         let data = null;
-        let curLevelData = cc.tools.gameManager.getcurLevelDatas();
-        console.log("curLevelData == ",curLevelData);
         this._isOpenSpecialLevel = cc.tools.gameManager.isOpenSpecial();
         if(this._isOpenSpecialLevel){
             data = cc.tools.gameManager.getSpecialLevelData();

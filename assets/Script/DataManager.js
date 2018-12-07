@@ -5,6 +5,7 @@ var levelData = function (data) {
 };
 levelData.prototype.initData = function(data){
     this.data = [];
+    this.hidelist =[];
     for (var key in data) {
         const element = data[key];  // value
         let maxChar = this.getCurLMaxchar(element.Answer);
@@ -24,9 +25,11 @@ levelData.prototype.initData = function(data){
          'key':key,
          'RewardWord':RewardWord,
         }
+        this.hidelist.push({'key':key,Hidetask});
         // console.log('element',obj);
         this.data.push(obj);
     }
+    console.log("this.hidelist == ",this.hidelist);
 };
 levelData.prototype.getDataByLevel = function(level){
     let value = null;
@@ -63,7 +66,7 @@ ChapterData.prototype.initData = function(data){
     this.data = data;
     for (var key in data) {
         let chapterData = data[key];
-        let levelList =chapterData.levels.split(",");
+        let levelList =chapterData.levels.split("_");
         let isOpen = chapterData.HideLevel!="null";
         let obj={'levelList':levelList,
         'chapterReward':chapterData.chapterReward,

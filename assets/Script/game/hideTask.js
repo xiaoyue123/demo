@@ -21,6 +21,7 @@ cc.Class({
     },
     updateHideTaskNumber:function(){
         let number = cc.tools.gameManager.getHideTaskCurFinishNumber();
+        console.log('number -- ',number);
         this.lab_hideTaskNumber.string =  number+'/10';
         this.progressBar.progress = number / 10;
         this.btn_receive.active = number/10>=1;
