@@ -62,6 +62,7 @@ gameManager.TipsUser = function(){
 }
 //获取当前关卡的数据
 gameManager.getCurLevelData = function(){
+    console.log("getCurLevelData",cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel());
     let data = cc.tools.DataManager.getDataByChapterAndLevel(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel());
     return data;
 }
