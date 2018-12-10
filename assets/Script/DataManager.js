@@ -57,7 +57,7 @@ levelData.prototype.getCurLMaxchar = function(data){
 var ChapterData = function (data) {
     this._ChapterData = new Array();
     this.initData(data);
-    console.log('ChapterData == ',this._ChapterData);
+    // console.log('ChapterData == ',this._ChapterData);
 };
 ChapterData.prototype.getChapterData = function(){
     return this._ChapterData;

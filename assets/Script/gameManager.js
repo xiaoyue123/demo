@@ -225,7 +225,7 @@ gameManager.getTips = function(){
 }
 //更新当前的章节和关卡
 gameManager.UpdateCurLevelData = function(chapter,level,wordFinish,isSpecialLevel){
-    let isUpdate = cc.tools.gameManager.isUpdateChapterAndLevel();
+    let isUpdate = cc.tools.gameManager.isUpdateChapterAndLevel(isSpecialLevel);
     if(isUpdate){
         UserData.UpdateCurLevelData(chapter,level,wordFinish,isSpecialLevel);
     }
@@ -236,12 +236,16 @@ gameManager.getcurLevelDatas = function(){
     return UserData.getcurLevelDatas();
 }
 //是否需要更新章节和关卡
-gameManager.isUpdateChapterAndLevel = function(){
+gameManager.isUpdateChapterAndLevel = function(isSpecialLevel){
     let isUpdate = false;
     if(UserData.chapter>UserData.getcurLevelDatas().Chapter){
         return true;
     }else{
         if(UserData.chapter==UserData.getcurLevelDatas().Chapter&&UserData.level>=UserData.getcurLevelDatas().Level){
+            // if(isSpecialLevel){
+
+            // }
+            // isUpdate=!isSpecialLevel;
             isUpdate = true;
         }
     }
@@ -255,5 +259,25 @@ gameManager.getCurLevelDataFinishList = function(){
         list= UserData.getcurLevelDatas().wordFinish;
     }
     return list;
+}
+//是否是已通关的关卡
+gameManager.isFinishLevel = function(){
+    let isFinish = false;
+    if(UserData.chapter<UserData.getcurLevelDatas().Chapter){
+        isFinish = true;
+    }
+    if(UserData.chapter==UserData.getcurLevelDatas().Chapter){
+        // if(!UserData.getcurLevelDatas().isSpecialLevel){  //在章节相等的情况下，当前关卡不是特殊关卡
+        //     isFinish = UserData.Level>UserData.getcurLevelDatas().Level?true:false;
+        // }
+        // if(UserData.Level<UserData.getcurLevelDatas().Level){
+        //     isFinish = true;
+        // }else if(UserData.Level==UserData.getcurLevelDatas().Level){
+        //     isFinish = false;
+        // }
+        console.log("UserData.Level<UserData.getcurLevelDatas().Level",UserData.level,UserData.getcurLevelDatas().Level);
+        isFinish = UserData.level<UserData.getcurLevelDatas().Level?true:false;
+    }
+    return isFinish;
 }
 module.exports =cc.tools.gameManager = gameManager;

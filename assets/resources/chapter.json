@@ -1,14 +1,14 @@
 {
     "1":{
-        "levels":"1_2_3_4_5",
+        "levels":"30",
         "chapterReward":25,
-        "HideLevel":"null",
+        "HideLevel":1002,
         "name":"diyi"
     },
     "2":{
         "levels":"6_7_8_9_10",
         "chapterReward":25,
-        "HideLevel":"",
+        "HideLevel":"null",
         "name":"dier"
     },
     "3":{

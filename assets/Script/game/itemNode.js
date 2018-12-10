@@ -73,6 +73,7 @@ cc.Class({
         let finCom = this._MainObj.finishView.getComponent(cc.Component);
         finCom.initViewBywork(data,this._MainObj,this._isOpenSpecialLevel);
 
+        console.log("cc.tools.gameManager.isFinishLevel()",cc.tools.gameManager.isFinishLevel());
     },
     initAllItems:function(){
         this.showPosList =[];

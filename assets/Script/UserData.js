@@ -139,6 +139,7 @@ UserData.getTips = function(){
     return this.tipsList;
 },
 UserData.updateLevel  = function(){
+    this.level = parseInt(this.level);
     this.level +=1;
 },
 UserData.isOpenSpecial_Level = function(isOpen){
@@ -149,6 +150,7 @@ UserData.isOpenSpecial = function(){
 },
 UserData.updatechapter  = function(){
     this.level = 0;
+    this.chapter = parseInt(this.chapter);
     this.chapter +=1;
 },
 UserData.updateTipsLevel  = function(){
