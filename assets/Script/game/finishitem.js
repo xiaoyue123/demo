@@ -108,6 +108,9 @@ cc.Class({
         if(this._tipsLevel==userTipLevel&&this.showItemList.length-1>=userTipLevel){
             return true;
         }
+        // if(this._tipsLevel<=this.showItemList.length-1){
+        //     return true;
+        // }
         return false;
     },
     FinishWordAction:function(){
@@ -163,7 +166,7 @@ cc.Class({
                     tempNode.height = size.height;
                     tempNode.parent = node;
                     this.showItemList.push(tempNode);
-                    if(this._isStarReward&&index<this._rewarStarNum-1){
+                    if(this._isStarReward&&index<this._rewarStarNum){
                         let star = new cc.Node();
                         star.addComponent(cc.Sprite).spriteFrame = this.starSpr.spriteFrame;
                         star.width =size.width;

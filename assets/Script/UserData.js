@@ -124,6 +124,7 @@ UserData.UpdateTips = function(chapter,level,tipsIndex,tipsWord){
         for (let index = 0; index < itemlist.list.length; index++) {
             if(itemlist.list[index].index==tipsIndex){
                 itemlist.list[index].tipsWord = tipsWord;
+                itemlist.tipsLevel = tipsWord;
                 _isHave = true;
                 break;
             }

@@ -4,7 +4,7 @@
         "Answer":"gym,my,gm",
         "Hidetask":"ymg,ym,mg",
         "consume":25,
-        "RewardWord":""
+        "RewardWord":"1,2,5"
     },
     "2":{
         "title":"cup",

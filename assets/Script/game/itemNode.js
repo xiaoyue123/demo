@@ -4,15 +4,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        showPos1:cc.Node,
-        showPos2:cc.Node,
-        showPos3:cc.Node,
-        showPos4:cc.Node,
-        showPos5:cc.Node,
-        showPos6:cc.Node,
-        showPos7:cc.Node,
-        showPos8:cc.Node,
-
         showbg:cc.Node,
         ItemPre:cc.Prefab,
         SprLine:cc.Prefab,
@@ -69,25 +60,14 @@ cc.Class({
         this.initCurWorks();
         this.initAllItems();
         this.runMoveItemAction();
-
         let finCom = this._MainObj.finishView.getComponent(cc.Component);
         finCom.initViewBywork(data,this._MainObj,this._isOpenSpecialLevel);
-
-        console.log("cc.tools.gameManager.isFinishLevel()",cc.tools.gameManager.isFinishLevel());
     },
     initAllItems:function(){
         this.showPosList =[];
         this.Lines =[];
         this.items =[];
         this.rectNodes =[];
-        this.showPosList.push(this.showPos1);
-        this.showPosList.push(this.showPos2);
-        this.showPosList.push(this.showPos3);
-        this.showPosList.push(this.showPos4);
-        this.showPosList.push(this.showPos5);
-        this.showPosList.push(this.showPos6);
-        this.showPosList.push(this.showPos7);
-        this.showPosList.push(this.showPos8);
         this.CurItem = null;
         this.MovePos = cc.v2();
         this.startPos = cc.v2();
@@ -176,7 +156,6 @@ cc.Class({
         this.showbg.width = this._selectArray.length*80;
     },
     showTopBgIsRightColor:function(obj){
-        console.log('obj.isHideTask',obj.isHideHave);
         if(obj.isHideTask){
             if(obj.isHideHave){
                 this.showbg.color = cc.Color.BLUE;
@@ -209,18 +188,21 @@ cc.Class({
         console.log('this.selectArray==',this.getCurConnectWork());
         // console.log('this.selectArray==', this.selectArray);
         this.updateshowTopItemBgSize();
+        let len = this.showbg.width*0.5;
+        let x = 0;
+        this.showbg.removeAllChildren();
         for (let index = 0; index < this._selectArray.length; index++) {
             const element = this._selectArray[index];
-            let node = this.showPosList[index];
-            node.removeAllChildren();
             let tempNode = new cc.Node();
-            // tempNode.anchorX = 0;
-            // tempNode.anchorY = 0;
             let sprite = tempNode.addComponent(cc.Sprite);
             sprite.spriteFrame =this._MainObj.Atlas.getSpriteFrame(element);
             tempNode.width =50;
             tempNode.height = 50;
-            tempNode.parent = node;
+            tempNode.anchorX = 0;
+            x = 15+index * (tempNode.width+20)-len;
+            tempNode.x = x;
+            tempNode.parent = this.showbg;
+            
         }
     },
     clear:function(target){
@@ -265,10 +247,11 @@ cc.Class({
             
             this.node.stopAllActions();
             for (let index = 0; index < this._selectArray.length; index++) {
-                let node = this.showPosList[index];
-                node.removeAllChildren();
+                // let node = this.showPosList[index];
+                // node.removeAllChildren();
                 this.Lines[index].removeFromParent();
             }
+            this.showbg.removeAllChildren();
             this._selectArray=[];
             this.showbg.active = false;
             this.Lines =[];
@@ -397,13 +380,13 @@ cc.Class({
         this._isBackRemoveState = false;
     },
     removeWork:function(){
-        let node = this.showPosList[this._selectArray.length-1];
-        node.removeAllChildren();
+        let node = this.showbg._children[this.showbg._children.length-1];
+        node.removeFromParent();
         this._selectArray.splice(this._selectArray.length-1,1);
         this._selectObjList.splice(this._selectObjList.length-1,1);
         this.Lines[this.Lines.length-1].removeFromParent();
         this.Lines.splice(this.Lines.length-1);
-        this.updateshowTopItemBgSize();
+        this.showTopItem();
     },
     getItemByWork:function(obj){
         for (let index = 0; index < this.rectNodes.length; index++) {

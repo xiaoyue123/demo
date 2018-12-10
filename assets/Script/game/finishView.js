@@ -33,6 +33,7 @@ cc.Class({
         _finishList:[],
         _isOpenSpecialLevel:false,
         _hideList:[],
+        _tipsConsume:0,
     },
     start () {
 
@@ -87,8 +88,8 @@ cc.Class({
             //查找是否是隐藏任务
         }
         if(item&&item.IsStarReward()&&!isFinish){
-            console.log("IsStarReward == 星星奖励",this._RewardCoin);
-            cc.tools.dispatchEvent(cc.tools.Event.START_REWARD,this._RewardCoin);
+            console.log("IsStarReward == 星星奖励",this._RewardCoin*this._RewardStarNum);
+            cc.tools.dispatchEvent(cc.tools.Event.START_REWARD,this._RewardCoin*this._RewardStarNum);
         }
         if(item&&!isFinish){
             console.log('FinishIndex == ',FinishIndex);
@@ -120,6 +121,17 @@ cc.Class({
         }
         return isHideTask;
     },
+    isHaveTips:function(){
+        let isHaveTips = false;
+        for (let index = 0; index < this._itemlist.length; index++) {
+            const element = this._itemlist[index];
+            if(element.isCanTihi()){
+                isHaveTips = true;
+                break;
+            }
+        }
+        return isHaveTips;
+    },
     showTishi:function(){
         let item = null;
         let curIndex = 0;
@@ -134,17 +146,22 @@ cc.Class({
         if(item){
             cc.tools.gameManager.updateTips(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel(),curIndex,cc.tools.gameManager.getTipsLevel());
             item.showByIndex(0);
+            cc.tools.gameManager.ConsumeCoin(this._tipsConsume);
+            cc.tools.dispatchEvent(cc.tools.GameConfig.Event.UPDATE_COIN);
         }else{
             if(cc.tools.gameManager.isMaxTishi()){
                 cc.tools.gameManager.updateTipsLevel();
                 this.showTishi();
             }else{
-                // console.log('可提示的全部提示',cc.tools.gameManager.getCurLMaxchar());
+                cc.tools.dispatchEvent(cc.tools.GameConfig.Event.SHOW_TIPS_TEXT,cc.gameConfig.TipsType.All_PROMPTS_COMPLETED);
             }
             
         }
     },
     initRewardWord:function(){
+        if(cc.tools.gameManager.isFinishLevel()){  //如果是已經完成的關卡不再給
+            this._RewardWord =[];
+        }
         if(this._RewardWord.length>0){
             this._isOpenRewardState = true;
         }
@@ -164,7 +181,8 @@ cc.Class({
         this._isOpenSpecialLevel = isOpenSpecialLevel;
         this._Answer = workData.Answer.split(",");
         this._hideTask = workData.Hidetask.split(",");
-        this._RewardWord = workData.RewardWord.split(",");
+        this._RewardWord = workData.RewardWord.split(",");  
+        this._tipsConsume =parseInt(workData.consume);
         this.initRewardWord();
         this._hideList = cc.tools.gameManager.getHideWordByChapterAndlevel(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel());
         this._itemlist =[];
@@ -172,6 +190,11 @@ cc.Class({
         let curLevelData = cc.tools.gameManager.getcurLevelDatas();
         let tipsList =  cc.tools.gameManager.getTipsByChapterAndlevel(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel());
         if(tipsList){
+            console.log("tipsList.tipsLevel == ",tipsList);
+            if(cc.tools.gameManager.isFinishLevel()){ 
+                // this._RewardWord =[];
+                tipsList.tipsLevel = 0;
+            }
             cc.tools.gameManager.updateTipsLevelNum(tipsList.tipsLevel);
         }
         let list = cc.tools.gameManager.getCurLevelDataFinishList();

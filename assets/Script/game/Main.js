@@ -49,7 +49,6 @@ cc.Class({
         let curLevelData = cc.tools.gameManager.getcurLevelDatas();
         cc.tools.UserData.level = curLevelData.Level;
         cc.tools.UserData.chapter = curLevelData.Chapter;
-        console.log("curLevelData == ",curLevelData);
         let self = this;
         this.loginNode.active = false;
         this.ItemNode.getComponent(cc.Component).init(self);
@@ -74,10 +73,8 @@ cc.Class({
     onChangeBtnEvent:function(){
         if(this.ItemNode.getComponent(cc.Component)._isMoveState) return;
         if(cc.tools.gameManager.IsConsumeCoin(this.ItemNode.getComponent(cc.Component)._data.consume)){
-            if(cc.tools.gameManager.isMaxTishi()){
-                cc.tools.gameManager.ConsumeCoin(this.ItemNode.getComponent(cc.Component)._data.consume);
+            if(cc.tools.gameManager.isMaxTishi()||this.finishView.getComponent(cc.Component).isHaveTips()){
                 cc.tools.gameManager.TipsUser();
-                cc.tools.dispatchEvent(cc.tools.GameConfig.Event.UPDATE_COIN);
                 cc.tools.AudioManager.playIndex(cc.gameConfig.Audio.tipsAudio);
             }else{
                 cc.tools.dispatchEvent(cc.tools.GameConfig.Event.SHOW_TIPS_TEXT,cc.gameConfig.TipsType.All_PROMPTS_COMPLETED);
@@ -110,7 +107,9 @@ cc.Class({
     },
     onShowSettlement:function(traget){
         if(traget.ItemNode.getComponent(cc.Component)._isOpenSpecialLevel){
-            cc.tools.gameManager.addCoin(cc.tools.gameManager.getSpecialLevelData().consume);
+            if(!cc.tools.gameManager.isFinishLevel()){  //如果是已經完成的關卡不再給
+                cc.tools.gameManager.addCoin(cc.tools.gameManager.getSpecialLevelData().consume);
+            }
         }
         traget.settlement.active = true;
         cc.tools.AudioManager.playIndex(cc.gameConfig.Audio.winAudio);

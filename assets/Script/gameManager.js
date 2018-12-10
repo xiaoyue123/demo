@@ -74,10 +74,11 @@ gameManager.getCurLMaxchar = function(){
 gameManager.isMaxTishi = function(){
     let _isMaxTishi = false;
     if(cc.tools.gameManager.isOpenSpecial()){
-        // console.log('MaxCharLength == ',cc.tools.gameManager.getSpecialLevelData().MaxCharLength);
         _isMaxTishi = cc.tools.gameManager.getSpecialLevelData().MaxCharLength>cc.tools.gameManager.getTipsLevel();
     }else{
-        _isMaxTishi = cc.tools.gameManager.getCurLMaxchar()>cc.tools.gameManager.getTipsLevel();
+        console.log('MaxCharLength == ',cc.tools.gameManager.getCurLMaxchar());
+        console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
+        _isMaxTishi = cc.tools.gameManager.getCurLMaxchar()-1>cc.tools.gameManager.getTipsLevel();
     }
     return _isMaxTishi;
 }

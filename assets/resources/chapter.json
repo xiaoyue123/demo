@@ -1,8 +1,8 @@
 {
     "1":{
-        "levels":"30",
+        "levels":"20",
         "chapterReward":25,
-        "HideLevel":1002,
+        "HideLevel":"null",
         "name":"diyi"
     },
     "2":{

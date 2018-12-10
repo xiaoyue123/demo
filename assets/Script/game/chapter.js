@@ -28,12 +28,16 @@ cc.Class({
         target.node.active = false;
     },
     initView:function(){
+        let list=cc.tools.DataManager.getStageData();
         if(this.content.getChildrenCount()>0){
-
+            for (let index = 0; index < this.content.getChildrenCount(); index++) {
+                const item =this.content._children[index];
+                let chapter = index+1;
+                item.getComponent('chapterItem').init(item.getComponent('chapterItem')._data,chapter);
+            }
         }else{
             let y = 0;
             let interval = 15;
-            let list=cc.tools.DataManager.getStageData();
             for (let index = list.length-1; index >= 0; index--) {
                 let item = cc.instantiate(this.instan);
                 item.position = cc.v2(0,y);
