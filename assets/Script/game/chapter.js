@@ -25,7 +25,8 @@ cc.Class({
         this.registerEvent();
     },
     hideChapter:function(target){
-        target.node.active = false;
+        // target.node.active = false;
+        target.node.x = -2000;
     },
     initView:function(){
         let list=cc.tools.DataManager.getStageData();
@@ -56,7 +57,7 @@ cc.Class({
     onShow:function(){
         this.instan =  cc.instantiate(this.itemPrefab);
         this.itemHeight = this.instan.height+10;
-        this.node.active = true;
+        this.node.x = 0;
         this.initView();
     },
 

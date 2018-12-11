@@ -185,7 +185,7 @@ cc.Class({
         }
     },
     showTopItem:function(){
-        console.log('this.selectArray==',this.getCurConnectWork());
+        // console.log('this.selectArray==',this.getCurConnectWork());
         // console.log('this.selectArray==', this.selectArray);
         this.updateshowTopItemBgSize();
         let len = this.showbg.width*0.5;
@@ -360,7 +360,6 @@ cc.Class({
                 let obj =target._selectObjList[target._selectObjList.length-2];
                 // let work = this.selectArray[this.selectArray.length-2]; //只能回退上一次的选择
                 if(item==obj){
-                    console.log('想回退到上一次的选择 == ',item.getWord());
                     target._isBackRemoveState = true;
                     target.unSelectAction();
                     target.backPreviousSelect();

@@ -162,8 +162,8 @@ cc.Class({
                     let tempNode = new cc.Node();
                     let sprite = tempNode.addComponent(cc.Sprite);
                     sprite.spriteFrame =sprframe;
-                    tempNode.width =size.width;
-                    tempNode.height = size.height;
+                    tempNode.width =size.width*0.8;
+                    tempNode.height = size.height*0.8;
                     tempNode.parent = node;
                     this.showItemList.push(tempNode);
                     if(this._isStarReward&&index<this._rewarStarNum){

@@ -75,11 +75,11 @@ gameManager.isMaxTishi = function(){
     let _isMaxTishi = false;
     if(cc.tools.gameManager.isOpenSpecial()){
         _isMaxTishi = cc.tools.gameManager.getSpecialLevelData().MaxCharLength-1>cc.tools.gameManager.getTipsLevel();
-        console.log('MaxCharLength == ',cc.tools.gameManager.getSpecialLevelData().MaxCharLength);
-        console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
+        // console.log('MaxCharLength == ',cc.tools.gameManager.getSpecialLevelData().MaxCharLength);
+        // console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
     }else{
-        console.log('MaxCharLength == ',cc.tools.gameManager.getCurLMaxchar());
-        console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
+        // console.log('MaxCharLength == ',cc.tools.gameManager.getCurLMaxchar());
+        // console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
         _isMaxTishi = cc.tools.gameManager.getCurLMaxchar()-1>cc.tools.gameManager.getTipsLevel();
     }
     return _isMaxTishi;
@@ -245,12 +245,22 @@ gameManager.isUpdateChapterAndLevel = function(isSpecialLevel){
     if(UserData.chapter>UserData.getcurLevelDatas().Chapter){
         return true;
     }else{
+        
         if(UserData.chapter==UserData.getcurLevelDatas().Chapter&&UserData.level>=UserData.getcurLevelDatas().Level){
             // if(isSpecialLevel){
 
             // }
             // isUpdate=!isSpecialLevel;
-            isUpdate = true;
+            // 当前关卡等于最大关卡
+            let data =cc.tools.DataManager.getDataByChapter(cc.tools.gameManager.getUserChapter());
+            console.log('最大关卡数',data.levelList.length);
+            console.log('当前关卡数',cc.tools.gameManager.getUserLevel());
+            if(data.levelList.length<=cc.tools.gameManager.getUserLevel()&&UserData.getcurLevelDatas().isSpecialLevel&&!isSpecialLevel){
+                isUpdate = false;
+                console.log('最大关卡，但无法更新');
+            }else{
+                isUpdate = true;
+            }   
         }
     }
     return isUpdate;
