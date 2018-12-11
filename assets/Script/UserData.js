@@ -80,8 +80,11 @@ UserData.UpdatehideWords = function(hideList,word){
 //     return isHave&&_isHave;
 // },
 
-UserData.getTipsByChapterAndlevel = function(chapter,level){
+UserData.getTipsByChapterAndlevel = function(chapter,level,isOpenSpecialLevel){
     let itemlist = null;
+    // if(isOpenSpecialLevel!=this.curLevelData.isSpecialLevel){
+    //     return null;
+    // }
     for (let index = 0; index < this.tipsList.length; index++) {
         const element = this.tipsList[index];
         if(element.chapter==chapter&&element.level==level){

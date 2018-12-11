@@ -29,7 +29,7 @@ levelData.prototype.initData = function(data){
         // console.log('element',obj);
         this.data.push(obj);
     }
-    console.log("this.hidelist == ",this.hidelist);
+    // console.log("this.hidelist == ",this.hidelist);
 };
 levelData.prototype.getDataByLevel = function(level){
     let value = null;

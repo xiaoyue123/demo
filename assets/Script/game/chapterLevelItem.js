@@ -21,7 +21,6 @@ cc.Class({
         // this._level = level;
         this._data = cc.tools.DataManager.getDataByChapter(this._chapter);
         let curLevelData = cc.tools.gameManager.getcurLevelDatas();
-        console.log("max chapter == ",this._chapter);
         let isUnlock = chapter<=curLevelData.Chapter;        
         this.lab_name.string = this._data.name;
         this.btn_play.active = isUnlock;

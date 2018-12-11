@@ -80,7 +80,7 @@ cc.Class({
         }
         if(isRight){
             isFinish = cc.tools.gameManager.addFinishList(work);
-            if(cc.tools.gameManager.getCurChapterIndexs().length >=this._Answer.length){
+            if(cc.tools.gameManager.getCurFinishLevel().length >=this._Answer.length){
                 // cc.tools.gameManager.nextLevel();
                 cc.tools.dispatchEvent(cc.tools.GameConfig.Event.SHOW_SETTLEMENT);
             }
@@ -161,6 +161,8 @@ cc.Class({
     initRewardWord:function(){
         if(cc.tools.gameManager.isFinishLevel()){  //如果是已經完成的關卡不再給
             this._RewardWord =[];
+            this._isOpenRewardState = false;
+            return;
         }
         if(this._RewardWord.length>0){
             this._isOpenRewardState = true;
@@ -188,22 +190,18 @@ cc.Class({
         this._itemlist =[];
         let posList = cc.tools.gameManager.getFinishWordListPos(this._Answer.length);
         let curLevelData = cc.tools.gameManager.getcurLevelDatas();
-        let tipsList =  cc.tools.gameManager.getTipsByChapterAndlevel(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel());
+        let tipsList =  cc.tools.gameManager.getTipsByChapterAndlevel(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel(),isOpenSpecialLevel);
+        console.log(" 是否是完成过的关卡 true or false？ ",cc.tools.gameManager.isFinishLevel());
         if(tipsList){
-            console.log("tipsList.tipsLevel == ",tipsList);
-            if(cc.tools.gameManager.isFinishLevel()){ 
-                // this._RewardWord =[];
-                tipsList.tipsLevel = 0;
-            }
-            cc.tools.gameManager.updateTipsLevelNum(tipsList.tipsLevel);
+            // console.log(" 有提示数据列表 ：",tipsList.list.length);
+            // if(cc.tools.gameManager.isFinishLevel()){ 
+            //     // this._RewardWord =[];
+            //     tipsList.tipsLevel = 0;
+            // }
+            // cc.tools.gameManager.updateTipsLevelNum(tipsList.tipsLevel);
         }
         let list = cc.tools.gameManager.getCurLevelDataFinishList();
         this._finishList =[];
-        // if(list&&list.length>0){
-        //     this._finishList = list;
-        // }else{
-
-        // }
         for (let index = 0; index < this._Answer.length; index++) {
             if(list&&list.length>index){
                 this._finishList.push(list[index]);
@@ -212,7 +210,6 @@ cc.Class({
             }
             
         }
-        console.log('this._finishList == ',this._finishList);
         cc.tools.gameManager.UpdateCurLevelData(cc.tools.gameManager.getUserChapter(),cc.tools.gameManager.getUserLevel(),this._finishList,this._isOpenSpecialLevel)
         for (let index = 0; index < this.posList.length; index++) {
             const element = this.posList[index];
@@ -234,13 +231,8 @@ cc.Class({
                     if(this._finishList[index]){
                         isFinish = true;
                     }
-                    // if(isFinish){
-                    //     cc.tools.UserData.curFinishLevel.push(work);
-                    // }
                     item.getComponent(cc.Component).showFinishItems(isFinish);
-                    // if(!isFinish){ 
-                        this._itemlist.push(item.getComponent(cc.Component));
-                    // }
+                    this._itemlist.push(item.getComponent(cc.Component));
                 }else{
                     if(curLevelData.isSpecialLevel){
                         this._finishList[index] =false;
@@ -278,6 +270,7 @@ cc.Class({
                 const element = _Answer[index];
                 if (element == word) {
                     isHave = true;
+                    cc.tools.UserData.curFinishLevel.push(word);
                     break;
                 }
             }

@@ -38,7 +38,7 @@ cc.Class({
         this._allPosList.push(this.getNodeInfo(this.posList13));
         this._allPosList.push(this.getNodeInfo(this.posList14));
         cc.gameConfig.FINISH_POS_LIST =this._allPosList;
-        console.log('cc.gameConfig.FINISH_POS_LIST',cc.gameConfig.FINISH_POS_LIST);
+        // console.log('cc.gameConfig.FINISH_POS_LIST',cc.gameConfig.FINISH_POS_LIST);
     },
     getNodeInfo:function(node){
         let list = new Array();

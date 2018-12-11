@@ -10,7 +10,7 @@ gameManager.getUserLevel =function(){
     return UserData.level;
 }
 //获取当前关卡完成的单词
-gameManager.getCurChapterIndexs = function(){
+gameManager.getCurFinishLevel = function(){
     return UserData.curFinishLevel;
 }
 //更新章节
@@ -53,8 +53,8 @@ gameManager.updateCurTipsLevel = function(num){
     UserData.updatecurTipsLevel(num);
 }
 
-gameManager.getTipsByChapterAndlevel = function(chapter,level){
-    return UserData.getTipsByChapterAndlevel(chapter,level);
+gameManager.getTipsByChapterAndlevel = function(chapter,level,isOpenSpecialLevel){
+    return UserData.getTipsByChapterAndlevel(chapter,level,isOpenSpecialLevel);
 }
 //提示玩家
 gameManager.TipsUser = function(){
@@ -74,7 +74,9 @@ gameManager.getCurLMaxchar = function(){
 gameManager.isMaxTishi = function(){
     let _isMaxTishi = false;
     if(cc.tools.gameManager.isOpenSpecial()){
-        _isMaxTishi = cc.tools.gameManager.getSpecialLevelData().MaxCharLength>cc.tools.gameManager.getTipsLevel();
+        _isMaxTishi = cc.tools.gameManager.getSpecialLevelData().MaxCharLength-1>cc.tools.gameManager.getTipsLevel();
+        console.log('MaxCharLength == ',cc.tools.gameManager.getSpecialLevelData().MaxCharLength);
+        console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
     }else{
         console.log('MaxCharLength == ',cc.tools.gameManager.getCurLMaxchar());
         console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
@@ -151,6 +153,7 @@ gameManager.nextLevel = function(){
             }else{
                 cc.tools.gameManager.OpenSpecialLevel(true);
                 UserData.tipsLevel = 0;
+                UserData.curFinishLevel =[];
                 cc.tools.dispatchEvent(cc.tools.GameConfig.Event.OPEN_SPECIAl_LEVEL);
             }
         }else{

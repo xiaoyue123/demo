@@ -1845,30 +1845,6 @@
       "__id__": 1
     },
     "_enabled": true,
-    "showPos1": {
-      "__id__": 11
-    },
-    "showPos2": {
-      "__id__": 16
-    },
-    "showPos3": {
-      "__id__": 21
-    },
-    "showPos4": {
-      "__id__": 26
-    },
-    "showPos5": {
-      "__id__": 31
-    },
-    "showPos6": {
-      "__id__": 36
-    },
-    "showPos7": {
-      "__id__": 41
-    },
-    "showPos8": {
-      "__id__": 46
-    },
     "showbg": {
       "__id__": 5
     },

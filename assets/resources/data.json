@@ -4,7 +4,7 @@
         "Answer":"gym,my,gm",
         "Hidetask":"ymg,ym,mg",
         "consume":25,
-        "RewardWord":"1,2,5"
+        "RewardWord":""
     },
     "2":{
         "title":"cup",
@@ -44,21 +44,21 @@
     "7":{
         "title":"ash",
         "Answer":"as,has,ash",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "8":{
         "title":"now",
         "Answer":"no,on,now,own,won",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "9":{
         "title":"mya",
         "Answer":"my,am,ma,may,yam",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
@@ -72,126 +72,126 @@
     "11":{
         "title":"doof",
         "Answer":"do,of,food",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "12":{
         "title":"reed",
         "Answer":"red,reed,deer",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "13":{
         "title":"feca",
         "Answer":"cafe,face,ace",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "14":{
         "title":"oven",
         "Answer":"on,one,eon,oven,no",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "15":{
         "title":"wdro",
         "Answer":"do,or,row,rod,word",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "16":{
         "title":"swei",
         "Answer":"sew,we,wise,is",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "17":{
         "title":"tpri",
         "Answer":"it,tip,pit,rip,trip",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "18":{
         "title":"tafc",
         "Answer":"at,cat,act,fact,fat",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "19":{
         "title":"seav",
         "Answer":"as,sea,save,vase",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "20":{
         "title":"uysb",
         "Answer":"by,sub,busy,bus,buys,buy,us",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "21":{
-        "title":"gflt",
-        "Answer":"if,it,flt,hift",
-        "Hidetask":"flg,",
+        "title":"gfit",
+        "Answer":"if,it,fit,gift",
+        "Hidetask":"flg",
         "consume":25,
         "RewardWord":"null"
     },
     "22":{
         "title":"liem",
-        "Answer":"me,elm,lie,mile",
+        "Answer":"me,eim,lie,mile",
         "Hidetask":"mli",
         "consume":25,
         "RewardWord":"null"
     },
     "23":{
         "title":"rnig",
-        "Answer":"in,gin,rig,grln,ring",
-        "Hidetask":"girn,",
+        "Answer":"in,gin,rig,grin,ring",
+        "Hidetask":"girn",
         "consume":25,
         "RewardWord":"null"
     },
     "24":{
         "title":"hows",
         "Answer":"so,how,sow,show,who",
-        "Hidetask":"hows,ohs,",
+        "Hidetask":"hows,ohs",
         "consume":25,
         "RewardWord":"null"
     },
     "25":{
         "title":"diew",
-        "Answer":"we,wed,dew,die,wide,",
-        "Hidetask":"",
+        "Answer":"we,wed,dew,die,wide",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "26":{
         "title":"weif",
         "Answer":"if,we,few,wife",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "27":{
         "title":"npie",
         "Answer":"in,pie,pin,pen,pine,nip",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "28":{
         "title":"blow",
         "Answer":"bow,blow,bowl,owl,low",
-        "Hidetask":"lob,",
+        "Hidetask":"lob",
         "consume":25,
         "RewardWord":"null"
     },
@@ -205,13 +205,13 @@
     "30":{
         "title":"htos",
         "Answer":"so,host,shot,hot,to",
-        "Hidetask":"hots,ohs,sot,",
+        "Hidetask":"hots,ohs,sot",
         "consume":25,
         "RewardWord":"null"
     },
     "31":{
         "title":"bdir",
-        "Answer":"bid,rib,bird,rib",
+        "Answer":"bid,rib,bird,dibr",
         "Hidetask":"drib",
         "consume":25,
         "RewardWord":"null"
@@ -219,84 +219,84 @@
     "32":{
         "title":"iewn",
         "Answer":"in,win,we,new,wine",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "33":{
         "title":"ceap",
         "Answer":"pa,ace,ape,cap,pace,cape,pea",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "34":{
         "title":"fruo",
         "Answer":"of,or,fur,for,four,our",
-        "Hidetask":"fro,",
+        "Hidetask":"fro",
         "consume":25,
         "RewardWord":"null"
     },
     "35":{
         "title":"hint",
         "Answer":"hi,in,it,hit,nit,hint,thin,tin",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "36":{
         "title":"jueci",
         "Answer":"cue,ice,juice",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "37":{
         "title":"ceehr",
         "Answer":"her,cheer,here",
-        "Hidetask":"cee,cere,",
+        "Hidetask":"cee,cere",
         "consume":25,
         "RewardWord":"null"
     },
     "38":{
         "title":"syror",
         "Answer":"soy,rosy,sorry",
-        "Hidetask":"ors,",
+        "Hidetask":"ors",
         "consume":25,
         "RewardWord":"null"
     },
     "39":{
         "title":"coall",
-        "Answer":"all,call,cial,local",
-        "Hidetask":"",
+        "Answer":"all,call,clal,local",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "40":{
-        "title":"fatfe",
-        "Answer":"aft,fast,fat,fats,,sat,staff",
-        "Hidetask":"",
+        "title":"fatfs",
+        "Answer":"aft,fast,fat,fats,sat,staff",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "41":{
         "title":"touhy",
         "Answer":"hot,toy,hut,you,out,thy,youth",
-        "Hidetask":"yhou,",
+        "Hidetask":"yhou",
         "consume":25,
         "RewardWord":"null"
     },
     "42":{
         "title":"whiks",
-        "Answer":"his,sji,whisk,wish",
-        "Hidetask":"",
+        "Answer":"his,ski,whisk,wish",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "43":{
         "title":"iniad",
-        "Answer":"aid,and,din,空5",
-        "Hidetask":"",
+        "Answer":"aid,and,din,india",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
@@ -317,35 +317,35 @@
     "46":{
         "title":"acklb",
         "Answer":"cab,lab,back,black,lack",
-        "Hidetask":"alb,balk,",
+        "Hidetask":"alb,balk",
         "consume":25,
         "RewardWord":"null"
     },
     "47":{
         "title":"enjyo",
         "Answer":"eon,joy,one,enjoy",
-        "Hidetask":"yon,yen,",
+        "Hidetask":"yon,yen",
         "consume":25,
         "RewardWord":"null"
     },
     "48":{
         "title":"bhcir",
         "Answer":"rib,rich,birch,crib",
-        "Hidetask":"hic,chi,",
+        "Hidetask":"hic,chi",
         "consume":25,
         "RewardWord":"null"
     },
     "49":{
         "title":"oolbm",
         "Answer":"mob,boom,loom,bloom",
-        "Hidetask":"moo,loo,lob,boo,",
+        "Hidetask":"moo,loo,lob,boo",
         "consume":25,
         "RewardWord":"null"
     },
     "50":{
         "title":"liutp",
         "Answer":"lip,lit,pit,put,tip,tulip",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
@@ -366,14 +366,14 @@
     "53":{
         "title":"rowra",
         "Answer":"oar,raw,row,roar,arrow,war",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "54":{
         "title":"gthfi",
         "Answer":"fig,fit,gift,fight,hit",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
@@ -387,125 +387,125 @@
     "56":{
         "title":"madra",
         "Answer":"arm,dam,ram,mad,mar,drama,rad",
-        "Hidetask":"deam,mara,",
+        "Hidetask":"deam,mara",
         "consume":25,
         "RewardWord":"null"
     },
     "57":{
         "title":"shfle",
         "Answer":"elf,she,self,flesh,shelf",
-        "Hidetask":"els,",
+        "Hidetask":"els",
         "consume":25,
         "RewardWord":"null"
     },
     "58":{
         "title":"gsesu",
         "Answer":"sue,use,sues,guess,uses",
-        "Hidetask":"ess,",
+        "Hidetask":"ess",
         "consume":25,
         "RewardWord":"null"
     },
     "59":{
         "title":"duimh",
         "Answer":"dim,hum,hid,him,humid,mud",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "60":{
         "title":"refev",
         "Answer":"eve,fee,rev,free,reef,ever,fever,veer",
-        "Hidetask":"ref,vee,",
+        "Hidetask":"ref,vee",
         "consume":25,
         "RewardWord":"null"
     },
     "61":{
         "title":"yellb",
-        "Answer":"bye,yell,bell,belly,lye",
-        "Hidetask":"ell,ley,",
+        "Answer":"bye,yell,bell,lye,belly",
+        "Hidetask":"ell,ley",
         "consume":25,
         "RewardWord":"null"
     },
     "62":{
         "title":"umbth",
-        "Answer":"bum,but,hub,tub,hum,thumb,hut",
-        "Hidetask":"",
+        "Answer":"bum,but,hub,tub,hum,hut,thumb",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "63":{
         "title":"oghud",
-        "Answer":"dog,hog,dug,duo,god,dough,hug",
-        "Hidetask":"ugh,",
+        "Answer":"dog,hog,dug,duo,hug,god,dough",
+        "Hidetask":"ugh",
         "consume":25,
         "RewardWord":"6,5,1"
     },
     "64":{
         "title":"arymr",
-        "Answer":"arm,ray,mar,may,ram,army,marry,yam",
-        "Hidetask":"",
+        "Answer":"arm,ray,mar,may,ram,yam,army,marry",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"7,5,1"
     },
     "65":{
         "title":"geedr",
         "Answer":"red,deer,edge,greed,reed",
-        "Hidetask":"dee,dreg,edger,erg,gee,",
+        "Hidetask":"dee,dreg,edger,erg,gee",
         "consume":25,
         "RewardWord":"null"
     },
     "66":{
         "title":"hknta",
         "Answer":"ant,hat,tan,tank,than,thank",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"6,5,1"
     },
     "67":{
         "title":"styud",
         "Answer":"stud,dust,dusty,duty,study,sty",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"5,5,5"
     },
     "68":{
         "title":"ebkab",
         "Answer":"babe,bake,beak,kebab",
-        "Hidetask":"ebb,kea,",
+        "Hidetask":"ebb,kea",
         "consume":25,
         "RewardWord":"4,5.1"
     },
     "69":{
         "title":"phouc",
         "Answer":"cop,cup,hop,chop,coup,pouch",
-        "Hidetask":"ouch,",
+        "Hidetask":"ouch",
         "consume":25,
         "RewardWord":"null"
     },
     "70":{
         "title":"lrwdo",
         "Answer":"low,old,owl,rod,row,lord,word,world",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "71":{
         "title":"ritdh",
-        "Answer":"hid,hit,rid,dirt,tgird",
-        "Hidetask":"",
+        "Answer":"hid,hit,rid,dirt,third",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "72":{
         "title":"teevn",
         "Answer":"eve,net,tee,ten,even,teen,vent,event,vet",
-        "Hidetask":"vee,",
+        "Hidetask":"vee",
         "consume":25,
         "RewardWord":"null"
     },
     "73":{
         "title":"ginht",
-        "Answer":"gin,hit,nit,hint,thin,night,thing,tin",
+        "Answer":"gin,hit,nit,hint,tin,thin,night,thing,tin",
         "Hidetask":"nigh,ting",
         "consume":25,
         "RewardWord":"6,5,5"
@@ -513,14 +513,14 @@
     "74":{
         "title":"poina",
         "Answer":"ion,nap,nip,pan,pin,pain,piano",
-        "Hidetask":"pion,",
+        "Hidetask":"pion",
         "consume":25,
         "RewardWord":"7,5,1"
     },
     "75":{
         "title":"akhse",
         "Answer":"ash,ask,has,sea,she,sake,shake",
-        "Hidetask":"kea,",
+        "Hidetask":"kea",
         "consume":25,
         "RewardWord":"null"
     },
@@ -534,49 +534,49 @@
     "77":{
         "title":"fotrh",
         "Answer":"for,hot,fort,forth,froth,rot",
-        "Hidetask":"fro,dft,",
+        "Hidetask":"fro,dft",
         "consume":25,
         "RewardWord":"4,5,5"
     },
     "78":{
         "title":"naklp",
-        "Answer":"lao,nap,pal,pan,lank,plan,planl",
-        "Hidetask":"",
+        "Answer":"lap,nap,pal,pan,lank,plan,plank",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "79":{
         "title":"ndacy",
-        "Answer":"and,day,any,van,cay,candy,nay",
-        "Hidetask":"cad,cyan,",
+        "Answer":"and,day,any,can,cay,nay,candy",
+        "Hidetask":"cad,cyan",
         "consume":25,
         "RewardWord":"6,5,1"
     },
     "80":{
         "title":"ruags",
         "Answer":"gas,rag,rug,sag,rags,rugs,sugar",
-        "Hidetask":"ars,",
+        "Hidetask":"ars",
         "consume":25,
         "RewardWord":"7,5,1"
     },
     "81":{
         "title":"agemi",
         "Answer":"age,aim,gem,game,mage,image,mega",
-        "Hidetask":"gam,magi,",
+        "Hidetask":"gam,magi",
         "consume":25,
         "RewardWord":"4,4.1"
     },
     "82":{
         "title":"pnirt",
         "Answer":"nip,nit,pin,pit,rip,tin,tip,pint,print,trip",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "83":{
         "title":"dolbn",
         "Answer":"don,nod,old,bold,bond,blond",
-        "Hidetask":"nob,lob,",
+        "Hidetask":"nob,lob",
         "consume":25,
         "RewardWord":"null"
     },
@@ -596,7 +596,7 @@
     },
     "86":{
         "title":"ppyal",
-        "Answer":"lao,lay,pal,pay,play,apply,piy",
+        "Answer":"lay,ppl,pal,pay,play,apply,ply",
         "Hidetask":"app,palp,pap,yap",
         "consume":25,
         "RewardWord":"null"
@@ -604,21 +604,21 @@
     "87":{
         "title":"zefor",
         "Answer":"foe,for,ore,roe,fore,zero,froze",
-        "Hidetask":"fro,ref,",
+        "Hidetask":"fro,ref",
         "consume":25,
         "RewardWord":"null"
     },
     "88":{
         "title":"rihtg",
         "Answer":"hit,rig,girt,grit,girth,right,trig",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"6,5,5"
     },
     "89":{
         "title":"dfuon",
         "Answer":"don,duo,fun,nod,fond,fund,undo,found,dun",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
@@ -632,14 +632,14 @@
     "91":{
         "title":"nogwr",
         "Answer":"nor,now,own,row,won,gown,grow,worn,grown,wrong",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"9,5,5"
     },
     "92":{
         "title":"rnigb",
         "Answer":"big,bin,gin,rib,rig,grin,ring,bring,brig",
-        "Hidetask":"brin,girn,nib,",
+        "Hidetask":"brin,girn,nib",
         "consume":25,
         "RewardWord":"null"
     },
@@ -653,49 +653,49 @@
     "94":{
         "title":"lheto",
         "Answer":"hot,let,lot,the,hole,hotel,toe",
-        "Hidetask":"het,hoe,",
+        "Hidetask":"het,hoe",
         "consume":25,
         "RewardWord":"6,5,1"
     },
     "95":{
         "title":"awtke",
         "Answer":"ate,awe,eat,tea,wet,take,teak,wake,weak,tweak",
-        "Hidetask":"kea,taw,",
+        "Hidetask":"kea,taw",
         "consume":25,
         "RewardWord":"null"
     },
     "96":{
         "title":"bitah",
         "Answer":"bat,bit,hat,hit,bait,bath,habit,tab",
-        "Hidetask":"baht,",
+        "Hidetask":"baht",
         "consume":25,
         "RewardWord":"7 ,5,1"
     },
     "97":{
         "title":"rcemi",
         "Answer":"ice,mire,ire,rice,rim,mice,crime,rime",
-        "Hidetask":"emir,",
+        "Hidetask":"emir",
         "consume":25,
         "RewardWord":"4,4.1"
     },
     "98":{
         "title":"rhnot",
         "Answer":"hot,nor,not,rot,ton,horn,torn,north,thorn,hon",
-        "Hidetask":"rho,",
+        "Hidetask":"rho",
         "consume":25,
         "RewardWord":"8,5,5"
     },
     "99":{
         "title":"tforn",
-        "Answer":"for,nor,not,rot,ton,font,fort,front,toen",
-        "Hidetask":"fro,oft,",
+        "Answer":"for,nor,not,rot,ton,font,fort,front,torn",
+        "Hidetask":"fro,oft",
         "consume":25,
         "RewardWord":"null"
     },
     "100":{
         "title":"dinrg",
-        "Answer":"dig,din,gin,rid,rig,gird,grid,grin,ring,geind,rind",
-        "Hidetask":"ding,girn,",
+        "Answer":"dig,din,gin,rid,rig,gird,grid,grin,ring,grind,rind",
+        "Hidetask":"ding,girn",
         "consume":25,
         "RewardWord":"10 ,5,1"
     },
@@ -709,7 +709,7 @@
     "102":{
         "title":"ueint",
         "Answer":"net,nit,nut,ten,tie,tin,tine,tune,unit,unite,untie,tun",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"10,5,5"
     },
@@ -723,26 +723,26 @@
     "104":{
         "title":"dayis",
         "Answer":"ads,aid,day,sad,say,aids,days,said,daisy,dais",
-        "Hidetask":"ais,ays,ids,",
+        "Hidetask":"ais,ays,ids",
         "consume":25,
         "RewardWord":"null"
     },
     "105":{
         "title":"weith",
-        "Answer":"hew,hut,the,tie,wet,wit,whet,with,white,whit",
-        "Hidetask":"het,",
+        "Answer":"hew,hit,the,tie,wet,wit,whet,with,white,whit",
+        "Hidetask":"het",
         "consume":25,
         "RewardWord":"9,5.1"
     },
     "106":{
         "title":"tinhk",
-        "Answer":"hit,ink,kit,nit,tin,hint,knit,thin,think,lin",
-        "Hidetask":"",
+        "Answer":"hit,ink,kit,nit,tin,hint,knit,thin,think,hin",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"9,5.1"
     },
     "107":{
-        "title":"klefn",
+        "title":"kiefn",
         "Answer":"fen,fin,ink,fine,knife,kin",
         "Hidetask":"fink,kine,ken,fie",
         "consume":25,
@@ -751,91 +751,91 @@
     "108":{
         "title":"mnawo",
         "Answer":"man,maw,mow,now,own,won,moan,mown,woman",
-        "Hidetask":"wan,",
+        "Hidetask":"wan",
         "consume":25,
         "RewardWord":"null"
     },
     "109":{
         "title":"ohrwt",
         "Answer":"hot,how,rot,row,tow,two,throw,worth,who",
-        "Hidetask":"rho,wort,ort,",
+        "Hidetask":"rho,wort,ort",
         "consume":25,
         "RewardWord":"8,5,5"
     },
     "110":{
         "title":"earzb",
         "Answer":"are,bar,bra,ear,era,bare,bear,zebra,braze,raze",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"8,5,5"
     },
     "111":{
         "title":"cdoul",
-        "Answer":"cod,duo,clod,cold,loud,cloud,could,old",
-        "Hidetask":"cud,",
+        "Answer":"cod,duo,clod,cold,old,loud,cloud,could",
+        "Hidetask":"cud",
         "consume":25,
         "RewardWord":"null"
     },
     "112":{
         "title":"luetf",
         "Answer":"elf,flu,let,felt,fuel,left,flute,flue,lute",
-        "Hidetask":"leu,",
+        "Hidetask":"leu",
         "consume":25,
         "RewardWord":"7,5,5"
     },
     "113":{
         "title":"tawch",
         "Answer":"act,cat,hat,chat,thaw,watch,what",
-        "Hidetask":"caw,haw,taw,",
+        "Hidetask":"caw,haw,taw",
         "consume":25,
         "RewardWord":"null"
     },
     "114":{
         "title":"ryugb",
         "Answer":"bug,buy,guy,rub,rug,bury,grub,rugby,ruby,bur",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"9,4,1"
     },
     "115":{
-        "title":"opvit",
+        "title":"opcit",
         "Answer":"cop,cot,cpt,pit,pot,tic,tip,optic,topic,top",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"9,5,5"
     },
     "116":{
         "title":"wngsi",
         "Answer":"gin,sin,wig,win,gins,sign,sing,wigs,wing,swing,wings,wins",
-        "Hidetask":"ins,swig,",
+        "Hidetask":"ins,swig",
         "consume":25,
         "RewardWord":"7,4,1"
     },
     "117":{
         "title":"seauc",
         "Answer":"ace,cue,sea,sue,aces,case,cues,cause,sauce,use",
-        "Hidetask":"sac,",
+        "Hidetask":"sac",
         "consume":25,
         "RewardWord":"9,5,5"
     },
     "118":{
         "title":"rojam",
         "Answer":"arm,jam,jar,mar,oar,ram,major,roam",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "119":{
         "title":"nredt",
-        "Answer":"den,end,net,red,ten,dent,nerd,rend,rent,tend,tern,trend,",
-        "Hidetask":"",
+        "Answer":"den,end,net,red,ten,dent,nerd,rend,rent,tend,tern,trend",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "120":{
         "title":"ircep",
         "Answer":"ice,ire,per,pie,rip,epic,pier,rice,price,ripe",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
@@ -848,50 +848,50 @@
     },
     "122":{
         "title":"liveo",
-        "Answer":"lie,oil,vie,evil,live,love,veil,vile,oplve,vole",
+        "Answer":"lie,oil,vie,evil,live,love,veil,vile,oilve,vole",
         "Hidetask":"voe,viol",
         "consume":25,
         "RewardWord":"9,5.1"
-    },
+    },	
     "123":{
-        "title":"niais",
+        "title":"nials",
         "Answer":"ail,nil,sin,ails,lain,nail,sail,nails,slain,snail",
-        "Hidetask":"ais,ins,nils,",
+        "Hidetask":"ais,ins,nils",
         "consume":25,
         "RewardWord":"10,5,5"
     },
     "124":{
         "title":"biegn",
-        "Answer":"beg,big,gin,nib,begin,being,bin,",
-        "Hidetask":"ben,binge,gie,gib,",
+        "Answer":"beg,big,gin,nib,begin,being,bin",
+        "Hidetask":"ben,binge,gie,gib",
         "consume":25,
         "RewardWord":"null"
     },
     "125":{
         "title":"crona",
         "Answer":"arc,can,car,con,nor,oar,corn,roan,acorn,ran",
-        "Hidetask":"orca,",
+        "Hidetask":"orca",
         "consume":25,
         "RewardWord":"null"
     },
     "126":{
         "title":"ppela",
         "Answer":"ale,ape,lap,lea,pal,pea,leap,pale,peal,apple,plea",
-        "Hidetask":"app,appel,palp,pap,pep,",
+        "Hidetask":"app,appel,palp,pap,pep",
         "consume":25,
         "RewardWord":"10,5.1"
     },
     "127":{
         "title":"orbnw",
         "Answer":"bow,nor,now,orb,own,rob,row,won,brow,worn,brown,born",
-        "Hidetask":"nob,lob,",
+        "Hidetask":"nob,lob",
         "consume":25,
         "RewardWord":"null"
     },
     "128":{
         "title":"dnleb",
         "Answer":"den,end,led,bend,bled,lend,blend,bed",
-        "Hidetask":"deb,ben,eld,",
+        "Hidetask":"deb,ben,eld",
         "consume":25,
         "RewardWord":"null"
     },
@@ -905,28 +905,28 @@
     "130":{
         "title":"ridoa",
         "Answer":"aid,air,oar,rid,rod,arid,raid,radio,road,rad",
-        "Hidetask":"ado,oda,ora,",
+        "Hidetask":"ado,oda,ora",
         "consume":25,
         "RewardWord":"9,5,1"
     },
     "131":{
         "title":"teubd",
         "Answer":"bed,bet,bud,but,dub,due,tub,debt,duet,debut,tube",
-        "Hidetask":"tubed,",
+        "Hidetask":"tubed",
         "consume":25,
         "RewardWord":"null"
     },
     "132":{
         "title":"chpea",
         "Answer":"ace,ape,cap,ache,cape,each,heap,pace,cheap,peach,pea",
-        "Hidetask":"chap,hap,pec,pac,",
+        "Hidetask":"chap,hap,pec,pac",
         "consume":25,
         "RewardWord":"10,5,5"
     },
     "133":{
         "title":"yeamt",
         "Answer":"ate,eat,mat,may,met,tea,yam,mate,meat,tame,team,meaty,yet",
-        "Hidetask":"aye,eta,matey,tam,yea,",
+        "Hidetask":"aye,eta,matey,tam,yea",
         "consume":25,
         "RewardWord":"null"
     },
@@ -940,273 +940,273 @@
     "135":{
         "title":"cownr",
         "Answer":"con,cow,nor,now,own,row,won,corn,crow,crown,worn",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"10,5,1"
     },
     "136":{
         "title":"liyda",
         "Answer":"aid,ail,day,lad,lay,dial,idly,lady,laid,daily,lid",
-        "Hidetask":"yald,",
+        "Hidetask":"yald",
         "consume":25,
         "RewardWord":"null"
     },
     "137":{
         "title":"redib",
         "Answer":"bed,bid,die,ire,red,rib,rid,bide,bier,bird,dire,ride,bride,bred",
-        "Hidetask":"brie,drib,ired,rebid,",
+        "Hidetask":"brie,drib,ired,rebid",
         "consume":25,
         "RewardWord":"13,5,1"
     },
     "138":{
         "title":"crsha",
         "Answer":"arc,ash,car,has,arch,arcs,cars,cash,char,rash,scar,chars,crash",
-        "Hidetask":"ars,sac,",
+        "Hidetask":"ars,sac",
         "consume":25,
         "RewardWord":"null"
     },
     "139":{
         "title":"feakl",
         "Answer":"ale,elf,lea,fake,flea,kale,lake,leaf,leaf,leak,flake,klea",
-        "Hidetask":"elk,kea,lek,",
+        "Hidetask":"elk,kea,lek",
         "consume":25,
         "RewardWord":"10,5,1"
     },
     "140":{
         "title":"woleh",
         "Answer":"hew,how,low,owl,who,woe,hole,howl,whole",
-        "Hidetask":"hoe,",
+        "Hidetask":"hoe",
         "consume":25,
         "RewardWord":"null"
     },
     "141":{
         "title":"eigrt",
         "Answer":"get,ire,rig,tie,girt,grit,rite,tier,tire,tiger,trig",
-        "Hidetask":"erg,teg,",
+        "Hidetask":"erg,teg",
         "consume":25,
         "RewardWord":"10,5,1"
     },
     "142":{
         "title":"tosve",
         "Answer":"set,toe,vet,toes,vest,veto,vets,stove,votes",
-        "Hidetask":"sot,voe,voes,",
+        "Hidetask":"sot,voe,voes",
         "consume":25,
         "RewardWord":"11,5,5"
     },
     "143":{
         "title":"buhsr",
         "Answer":"bus,hub,rub,sub,burs,bush,hubs,rubs,rush,brush,shrub,bur",
-        "Hidetask":"buhr,buhrs,",
+        "Hidetask":"buhr,buhrs",
         "consume":25,
         "RewardWord":"null"
     },
     "144":{
         "title":"utotr",
         "Answer":"our,out,rot,rut,tot,rout,tort,tour,tout,trot,trout,tutor",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"11,5,5"
     },
     "145":{
         "title":"mnole",
         "Answer":"elm,eon,men,lone,mole,omen,lemon,melon,one",
-        "Hidetask":"enol,noel,",
+        "Hidetask":"enol,noel",
         "consume":25,
         "RewardWord":"null"
     },
     "146":{
         "title":"mnide",
         "Answer":"den,die,dim,din,end,men,dine,mend,mind,mine,denim,mined",
-        "Hidetask":"dime,mid,",
+        "Hidetask":"dime,mid",
         "consume":25,
         "RewardWord":"null"
     },
     "147":{
         "title":"tlria",
         "Answer":"ail,air,art,lit,rat,tar,lair,liar,rali,tail,trail,trial",
-        "Hidetask":"aril,lari,lira,tali,",
+        "Hidetask":"aril,lari,lira,tali",
         "consume":25,
         "RewardWord":"11,5,5"
     },
     "148":{
         "title":"awmsp",
-        "Answer":"amp,map,maw,paw,sap,saw,spa,was,amps,maps,paws,swap,swap,wasp,swamp,swam,",
-        "Hidetask":"asp,mas,maws,pam,spam,sqmp,",
+        "Answer":"amp,map,maw,paw,sap,saw,spa,was,amps,maps,paws,swap,wasp,swamp,swam",
+        "Hidetask":"asp,mas,maws,pam,spam,sqmp",
         "consume":25,
         "RewardWord":"null"
     },
     "149":{
         "title":"rievd",
         "Answer":"die,ire,red,rev,rid,vie,dire,dive,ride,diver,drive,vied",
-        "Hidetask":"ired,rive,",
+        "Hidetask":"ired,rive",
         "consume":25,
         "RewardWord":"11,5,5"
     },
     "150":{
         "title":"eodnz",
         "Answer":"den,doe,don,end,eon,nod,ode,one,done,doze,node,zone,dozen,zoned",
-        "Hidetask":"zed,zen,",
+        "Hidetask":"zed,zen",
         "consume":25,
         "RewardWord":"null"
     },
     "151":{
         "title":"crham",
-        "Answer":"arc,arm,car,ham,map,arch,char,cram,harm,charm,march,ram",
-        "Hidetask":"cam,mach,",
+        "Answer":"arc,arm,car,ham,mah,arch,char,cram,harm,charm,march,ram",
+        "Hidetask":"cam,mach",
         "consume":25,
         "RewardWord":"11,5,5"
     },
     "152":{
         "title":"dranb",
         "Answer":"and,bad,ban,bar,bra,dab,ran,band,bard,barn,bran,darb,drab,brand,rad",
-        "Hidetask":"brad,nab,rand,",
+        "Hidetask":"brad,nab,rand",
         "consume":25,
         "RewardWord":"null"
     },
     "153":{
         "title":"rplia",
         "Answer":"ail,air,lap,lip,pal,par,rap,rip,lair,liar,ralp,april,pair",
-        "Hidetask":"aril,lari,lira,rial,",
+        "Hidetask":"aril,lari,lira,rial",
         "consume":25,
         "RewardWord":"12,5,1"
     },
     "154":{
         "title":"naotb",
         "Answer":"ant,ban,bat,not,oat,tab,tan,ton,boat,baton,bot",
-        "Hidetask":"boa,nab,nob,tao,",
+        "Hidetask":"boa,nab,nob,tao",
         "consume":25,
         "RewardWord":"null"
     },
     "155":{
         "title":"wrpeo",
         "Answer":"ore,owe,per,pew,roe,row,woe,pore,rope,wore,power,pro",
-        "Hidetask":"pow,prow,repo,ope,",
+        "Hidetask":"pow,prow,repo,ope",
         "consume":25,
         "RewardWord":"11,5,1"
     },
     "156":{
         "title":"wtees",
         "Answer":"see,sew,tee,wet,stew,tees,west,wets,sweet,set",
-        "Hidetask":"ewe,ewes,wee,",
+        "Hidetask":"ewe,ewes,wee",
         "consume":25,
         "RewardWord":"9,5,5"
     },
     "157":{
         "title":"ginsr",
         "Answer":"gin,rig,sin,sir,gins,grin,rigs,ring,sing,grins,rings,sign",
-        "Hidetask":"girn,ins,girns,",
+        "Hidetask":"girn,ins,girns",
         "consume":25,
         "RewardWord":"null"
     },
     "158":{
         "title":"tswia",
         "Answer":"its,sat,saw,sit,was,wit,swat,wait,waits,waist,wits",
-        "Hidetask":"ais,taw,wist,",
+        "Hidetask":"ais,taw,wist",
         "consume":25,
         "RewardWord":"10,5,1"
     },
     "159":{
         "title":"hoenp",
         "Answer":"eon,hen,hop,one,pen,hone,hope,open,peon,phone,hon",
-        "Hidetask":"hoe,nope,pho,poh,noh,ope,hep,",
+        "Hidetask":"hoe,nope,pho,poh,noh,ope,hep",
         "consume":25,
         "RewardWord":"null"
     },
     "160":{
         "title":"uohts",
         "Answer":"hot,hut,out,host,huts,oust,outs,shot,shut,thus,shout,south,thou",
-        "Hidetask":"ohs,sot,",
+        "Hidetask":"ohs,sot",
         "consume":25,
         "RewardWord":"13,5,5"
     },
     "161":{
         "title":"bloew",
         "Answer":"bow,low,owe,owl,web,woe,nlew,blow,bowl,below,bowel,elbow,lobe",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"12,5,1"
     },
     "162":{
         "title":"tuerc",
         "Answer":"cue,cur,cut,rue,rut,cure,curt,cute,true,cuter,cruet,truce",
-        "Hidetask":"ecru,eruct,recut,",
+        "Hidetask":"ecru,eruct,recut",
         "consume":25,
         "RewardWord":"11,5,5"
     },
     "163":{
         "title":"ayidr",
         "Answer":"aid,air,day,dry,ray,rid,airy,arid,dray,raid,yard,diary,dairy,rad",
-        "Hidetask":"yaird,yird,rai,ria,",
+        "Hidetask":"yaird,yird,rai,ria",
         "consume":25,
         "RewardWord":"13,5,5"
     },
     "164":{
         "title":"chaet",
         "Answer":"ace,act,ate,cat,eat,hat,tea,the,ache,ache,chat,each,etch,hate,tech,cheat,teach,heat",
-        "Hidetask":"eta,het,",
+        "Hidetask":"eta,het",
         "consume":25,
         "RewardWord":"16,5,5"
     },
     "165":{
         "title":"oentf",
         "Answer":"eon,fen,foe,net,not,one,ten,toe,ton,font,note,often,tone",
-        "Hidetask":"oft,",
+        "Hidetask":"oft",
         "consume":25,
         "RewardWord":"null"
     },
     "166":{
         "title":"dubno",
         "Answer":"bud,bun,don,dub,duo,nop,nub,bond,undo,bound,dun",
-        "Hidetask":"nob,",
+        "Hidetask":"nob",
         "consume":25,
         "RewardWord":"null"
     },
     "167":{
         "title":"nreag",
         "Answer":"age,are,ear,era,nag,rag,ran,earn,gear,near,rage,rang,anger,range",
-        "Hidetask":"ern,erg,gnar,",
+        "Hidetask":"ern,erg,gnar",
         "consume":25,
         "RewardWord":"14,5,1"
     },
     "168":{
         "title":"piemr",
         "Answer":"ire,per,pie,rim,rip,mire,perm,pier,prim,pime,prime,ripe",
-        "Hidetask":"emir,imp,",
+        "Hidetask":"emir,imp",
         "consume":25,
         "RewardWord":"null"
     },
     "169":{
         "title":"ecalp",
         "Answer":"ace,ale,ape,cap,lap,lea,pal,pea,cape,clap,lace,leap,pace,pale,peal,place,plea",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "170":{
         "title":"cteaf",
         "Answer":"ace,act,aft,ate,cat,eat,fat,cafe,face,fact,fate,feat,facet,tea",
-        "Hidetask":"eta,",
+        "Hidetask":"eta",
         "consume":25,
         "RewardWord":"null"
     },
     "171":{
         "title":"abrek",
         "Answer":"are,ark,bar,bra,ear,bake,bare,bark,beak,bear,rake,brake,break,baker,era",
-        "Hidetask":"berk,",
+        "Hidetask":"berk",
         "consume":25,
         "RewardWord":"14,5,5"
     },
     "172":{
         "title":"amerf",
         "Answer":"are,arm,ear,era,far,mar,ram,fame,fare,farm,fear,ream,frame,mare",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "173":{
         "title":"perus",
         "Answer":"per,pus,rue,sue,use,pure,ruse,spur,sure,purse,super,user",
-        "Hidetask":"rues,sprue,spue,suer,ups,",
+        "Hidetask":"rues,sprue,spue,suer,ups",
         "consume":25,
         "RewardWord":"11,5,5"
     },
@@ -1220,133 +1220,133 @@
     "175":{
         "title":"hoers",
         "Answer":"her,ore,roe,she,hero,hers,hose,ores,roes,shoe,horse,shore,sore",
-        "Hidetask":"eros,heros,hoe,hoer,hoes,ohs,ors,resh,rho,rhos,shoer,",
+        "Hidetask":"eros,heros,hoe,hoer,hoes,ohs,ors,resh,rho,rhos,shoer",
         "consume":25,
         "RewardWord":"13,5,5"
     },
     "176":{
         "title":"oonsin",
         "Answer":"inn,ion,sin,son,inns,ions,noon,onion,onions,soon",
-        "Hidetask":"ins,noons,nos,",
+        "Hidetask":"ins,noons,nos",
         "consume":25,
         "RewardWord":"9,5,5"
     },
     "177":{
         "title":"woollf",
         "Answer":"low,owl,woo,flow,fool,fowl,wolf,follow,wool",
-        "Hidetask":"loo,",
+        "Hidetask":"loo",
         "consume":25,
         "RewardWord":"null"
     },
     "178":{
         "title":"gyrhnu",
         "Answer":"gun,guy,hug,rug,run,urn,rung,hungry,hung",
-        "Hidetask":"gnu,ugh,",
+        "Hidetask":"gnu,ugh",
         "consume":25,
         "RewardWord":"8,6,1"
     },
     "179":{
         "title":"object",
         "Answer":"bet,cot,jet,job,jot,toe,object,bot",
-        "Hidetask":"cob,",
+        "Hidetask":"cob",
         "consume":25,
         "RewardWord":"null"
     },
     "180":{
         "title":"acnehc",
         "Answer":"ace,can,ache,acne,cane,each,cache,chance,hen",
-        "Hidetask":"ceca,",
+        "Hidetask":"ceca",
         "consume":25,
         "RewardWord":"8,6,1"
     },
     "181":{
         "title":"ysstem",
         "Answer":"met,set,sty,yes,mess,sets,stem,messy,stema,system,yet",
-        "Hidetask":"esm,ess,stye,styes,",
+        "Hidetask":"esm,ess,stye,styes",
         "consume":25,
         "RewardWord":"null"
     },
     "182":{
         "title":"eeeltb",
         "Answer":"bee,bet,eel,let,beet,belt,beetle,tee",
-        "Hidetask":"betel,lee,",
+        "Hidetask":"betel,lee",
         "consume":25,
         "RewardWord":"7,6,6"
     },
     "183":{
         "title":"bidrhy",
         "Answer":"bid,dry,hid,rid,bird,hybrid,rib",
-        "Hidetask":"dib,drib,",
+        "Hidetask":"dib,drib",
         "consume":25,
         "RewardWord":"null"
     },
     "184":{
         "title":"ttnnie",
         "Answer":"inn,net,nit,ten,tie,tin,nine,tent,tine,intent,tint",
-        "Hidetask":"tet,",
+        "Hidetask":"tet",
         "consume":25,
         "RewardWord":"null"
     },
     "185":{
         "title":"iilvno",
         "Answer":"lon,nil,oil,lion,loin,viol,violin",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"7,6,1"
     },
     "186":{
         "title":"mumedi",
         "Answer":"die,dim,due,mud,mum,dime,medium,mime",
-        "Hidetask":"mid,emu,mimed,",
+        "Hidetask":"mid,emu,mimed",
         "consume":25,
         "RewardWord":"null"
     },
     "187":{
         "title":"gllrdf",
         "Answer":"dig,fig,fir,rid,gird,grid,rigid,rigid,frigid,rig",
-        "Hidetask":"irid,",
+        "Hidetask":"irid",
         "consume":25,
         "RewardWord":"null"
     },
     "188":{
         "title":"tpatoo",
         "Answer":"oat,opt,pat,pot,tap,too,top,tot,atop,potato,tat",
-        "Hidetask":"apt,toot,tao,",
+        "Hidetask":"apt,toot,tao",
         "consume":25,
         "RewardWord":"8,6,6"
     },
     "189":{
         "title":"ljgenu",
         "Answer":"gel,gun,jug,leg,lug,glue,june,lung,lunge,jungle,lune",
-        "Hidetask":"glen,gnu,leu,luge,",
+        "Hidetask":"glen,gnu,leu,luge",
         "consume":25,
         "RewardWord":"null"
     },
     "190":{
         "title":"uclbip",
         "Answer":"cub,lip,pub,blip,clip,club,pubic,public,cup",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"8,6,1"
     },
     "191":{
         "title":"jdastu",
         "Answer":"ads,jut,sad,sat,dust,just,juts,stud,adjust,tad",
-        "Hidetask":"taus,tau,",
+        "Hidetask":"taus,tau",
         "consume":25,
         "RewardWord":"null"
     },
     "192":{
         "title":"gtorfo",
-        "Answer":"fog,for,got,rot,too,foot,fort,roof,root,forgot,frog,tog,",
-        "Hidetask":"forgo,fro,goo,goof,oft,toro,tor,",
+        "Answer":"fog,for,got,rot,too,foot,fort,roof,root,forgot,frog,tog",
+        "Hidetask":"forgo,fro,goo,goof,oft,toro,tor",
         "consume":25,
         "RewardWord":"11,6,1"
     },
     "193":{
         "title":"fulesu",
         "Answer":"elf,flu,sue,use,flue,fuel,fuse,self,flues,fuels,useful",
-        "Hidetask":"els,fusel,leu,",
+        "Hidetask":"els,fusel,leu",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1360,56 +1360,56 @@
     "195":{
         "title":"rrerot",
         "Answer":"err,ore,roe,rot,toe,rote,error,retro,terror,tore",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "196":{
         "title":"icedkw",
         "Answer":"dew,die,ice,wed,deck,dice,iced,wick,wide,wicked,kid",
-        "Hidetask":"cedi,ick,",
+        "Hidetask":"cedi,ick",
         "consume":25,
         "RewardWord":"null"
     },
     "197":{
         "title":"bblemu",
         "Answer":"bum,elm,blue,bulb,mule,bumble,emu",
-        "Hidetask":"bleb,ebb,leu,lube,umbel,",
+        "Hidetask":"bleb,ebb,leu,lube,umbel",
         "consume":25,
         "RewardWord":"6,6,6"
     },
     "198":{
         "title":"buowrr",
         "Answer":"bow,bur,orb,our,rob,row,brow,burrow,rub",
-        "Hidetask":"burr,burro,brr,",
+        "Hidetask":"burr,burro,brr",
         "consume":25,
         "RewardWord":"null"
     },
     "199":{
         "title":"dfxoor",
         "Answer":"for,fox,rod,door,food,odor,roof,oxford,ford",
-        "Hidetask":"fro,rood,",
+        "Hidetask":"fro,rood",
         "consume":25,
         "RewardWord":"8,6,1"
     },
     "200":{
         "title":"rhillt",
         "Answer":"hit,ill,lit,hill,hilt,lilt,rill,till,thrill,trill",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "201":{
         "title":"ddtcai",
         "Answer":"act,add,aid,cat,did,tad,acid,addict,tic",
-        "Hidetask":"cad,",
+        "Hidetask":"cad",
         "consume":25,
         "RewardWord":"9,6,6"
     },
     "202":{
         "title":"gglamn",
         "Answer":"aim,gag,gin,man,nag,gain,gang,main,gaming,aging",
-        "Hidetask":"agin,gam,magi,gan,",
+        "Hidetask":"agin,gam,magi,gan",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1423,168 +1423,168 @@
     "204":{
         "title":"pllwoi",
         "Answer":"ill,lip,lop,low,oil,owl,pill,plow,poll,pillow,will",
-        "Hidetask":"pow,",
+        "Hidetask":"pow",
         "consume":25,
         "RewardWord":"10,6,1"
     },
     "205":{
         "title":"nymifa",
-        "Answer":"aim,any,fan,fin,man,may,nay,main,many,infamy,yam,",
-        "Hidetask":"fain,myna,",
+        "Answer":"aim,any,fan,fin,man,may,nay,main,many,infamy,yam",
+        "Hidetask":"fain,myna",
         "consume":25,
         "RewardWord":"null"
     },
     "206":{
         "title":"fpyalp",
         "Answer":"fly,lap,lay,pal,pay,ply,flap,flay,play,apply,flappy",
-        "Hidetask":"app,palp,pap,yap,ply,",
+        "Hidetask":"app,palp,pap,yap,ply",
         "consume":25,
         "RewardWord":"null"
     },
     "207":{
         "title":"urregb",
         "Answer":"beg,bug,err,rub,rue,rug,grub,urge,burger,bur",
-        "Hidetask":"burr,erg,urger,",
+        "Hidetask":"burr,erg,urger",
         "consume":25,
         "RewardWord":"9,6,6"
     },
     "208":{
         "title":"oralfl",
-        "Answer":"all,far,for,oar,oaf,fall,foal,loaf,oral,flora,floral,roll,",
-        "Hidetask":"fora,fro,",
+        "Answer":"all,far,for,oar,oaf,fall,foal,loaf,oral,flora,floral,roll",
+        "Hidetask":"fora,fro",
         "consume":25,
         "RewardWord":"null"
     },
     "209":{
         "title":"ryuitp",
         "Answer":"pit,pry,put,rip,rut,tip,pity,trip,purity,try",
-        "Hidetask":"yurt,yup,yip,",
+        "Hidetask":"yurt,yup,yip",
         "consume":25,
         "RewardWord":"null"
     },
     "210":{
         "title":"rreefp",
         "Answer":"err,fee,per,free,peer,reef,refer,prefer,freer",
-        "Hidetask":"ref,",
+        "Hidetask":"ref",
         "consume":25,
         "RewardWord":"null"
     },
     "211":{
         "title":"cuettl",
         "Answer":"cue,cut,let,clue,cult,cute,cutlet,lute",
-        "Hidetask":"celt,cuttle,leu,tet,",
+        "Hidetask":"celt,cuttle,leu,tet",
         "consume":25,
         "RewardWord":"7,6,6"
     },
     "212":{
         "title":"bogixn",
         "Answer":"big,bin,bog,box,gin,ion,nib,bingo,boxing,bio",
-        "Hidetask":"gob,inbox,nob,nix,",
+        "Hidetask":"gob,inbox,nob,nix",
         "consume":25,
         "RewardWord":"null"
     },
     "213":{
         "title":"rageag",
         "Answer":"age,are,ear,egg,era,gag,rag,area,gear,garage,rage",
-        "Hidetask":"agar,eggar,erg,gaga,gage,gager,",
+        "Hidetask":"agar,eggar,erg,gaga,gage,gager",
         "consume":25,
         "RewardWord":"null"
     },
     "214":{
         "title":"lwleyo",
         "Answer":"low,lye,owe,woe,yew,well,yell,lowly,yellow,owl",
-        "Hidetask":"ell,owly,wye,yowl,yowe,yow,",
+        "Hidetask":"ell,owly,wye,yowl,yowe,yow",
         "consume":25,
         "RewardWord":"9,6,1"
     },
     "215":{
         "title":"ithinw",
         "Answer":"hit,nit,tin,win,wit,hint,thin,twin,with,within,whit",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "216":{
         "title":"zwdria",
         "Answer":"aid,air,raw,rid,wad,war,arid,draw,raid,ward,wizard,rad",
-        "Hidetask":"adz,daw,wadi,wiz,",
+        "Hidetask":"adz,daw,wadi,wiz",
         "consume":25,
         "RewardWord":"null"
     },
     "217":{
         "title":"tumtno",
         "Answer":"not,nut,out,ton,tot,tout,unto,mount,mutton,tun",
-        "Hidetask":"muon,mutt,tom,nom,tum,",
+        "Hidetask":"muon,mutt,tom,nom,tum",
         "consume":25,
         "RewardWord":"9,6,6"
     },
     "218":{
         "title":"wrneni",
         "Answer":"inn,ire,new,win,nine,rein,weir,wine,wire,inner,winner,wren",
-        "Hidetask":"renin,",
+        "Hidetask":"renin",
         "consume":25,
         "RewardWord":"null"
     },
     "219":{
         "title":"cadefa",
         "Answer":"ace,fad,fed,aced,cafe,deaf,face,faced,facade,fade",
-        "Hidetask":"cad,decaf,",
+        "Hidetask":"cad,decaf",
         "consume":25,
         "RewardWord":"9,6,6"
     },
     "220":{
         "title":"dwniwo",
         "Answer":"din,don,ion,nod,now,own,win,won,wow,down,widow,window,wind",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "221":{
         "title":"stkyoc",
         "Answer":"cot,coy,sky,soy,sty,toy,cost,cosy,cots,cyst,sock,stock,stocky,toys",
-        "Hidetask":"coys,scot,sot,",
+        "Hidetask":"coys,scot,sot",
         "consume":25,
         "RewardWord":"null"
     },
     "222":{
         "title":"pnikna",
         "Answer":"ink,inn,kin,nap,nip,pan,pin,akin,pain,napkin,pink",
-        "Hidetask":"kana,kip,pinna,",
+        "Hidetask":"kana,kip,pinna",
         "consume":25,
         "RewardWord":"10,6,1"
     },
     "223":{
         "title":"birthg",
         "Answer":"big,bit,hit,rib,rig,brig,girt,grit,birth,girth,right,bright,trig",
-        "Hidetask":"brith,brit,",
+        "Hidetask":"brith,brit",
         "consume":25,
         "RewardWord":"null"
     },
     "224":{
         "title":"tyghie",
         "Answer":"get,hey,hit,the,hty,tie,yet,they,eight,eighty,yeti",
-        "Hidetask":"het,yeh,",
+        "Hidetask":"het,yeh",
         "consume":25,
         "RewardWord":"null"
     },
     "225":{
         "title":"ugetgn",
         "Answer":"egg,get,gun,gut,net,nut,ten,tug,tune,nugget,tun",
-        "Hidetask":"gent,gnu,teg,",
+        "Hidetask":"gent,gnu,teg",
         "consume":25,
         "RewardWord":"10,6,6"
     },
     "226":{
         "title":"diiong",
         "Answer":"dig,din,dog,don,gin,god,ion,ding,doing,indigo,nod",
-        "Hidetask":"dingo,",
+        "Hidetask":"dingo",
         "consume":25,
         "RewardWord":"null"
     },
     "227":{
         "title":"ceeddi",
         "Answer":"did,die,ice,cede,deed,dice,died,ceded,diced,decide,iced",
-        "Hidetask":"cedi,cee,dee,deice,deiced,",
+        "Hidetask":"cedi,cee,dee,deice,deiced",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1598,14 +1598,14 @@
     "229":{
         "title":"myitsc",
         "Answer":"icy,its,sit,sty,city,cyst,mist,misty,mystic,tic",
-        "Hidetask":"cis,ism,sic,sim,smit,stimy,tics,",
+        "Hidetask":"cis,ism,sic,sim,smit,stimy,tics",
         "consume":25,
         "RewardWord":"null"
     },
     "230":{
         "title":"ttamoo",
         "Answer":"mat,moo,oat,too,tot,atom,moat,moot,motto,tomato,tat",
-        "Hidetask":"matt,tam,tom,toot,tao,moa,mot,",
+        "Hidetask":"matt,tam,tom,toot,tao,moa,mot",
         "consume":25,
         "RewardWord":"10,6,6"
     },
@@ -1626,140 +1626,140 @@
     "233":{
         "title":"przepi",
         "Answer":"ire,per,pie,rip,zip,pier,pipe,ripe,piper,prize,zipper",
-        "Hidetask":"pep,pip,prep,",
+        "Hidetask":"pep,pip,prep",
         "consume":25,
         "RewardWord":"null"
     },
     "234":{
         "title":"polenl",
         "Answer":"eon,lop,one,pen,lone,lope,open,peon,pole,poll,pollen",
-        "Hidetask":"ell,neol,noel,nope,",
+        "Hidetask":"ell,neol,noel,nope",
         "consume":25,
         "RewardWord":"null"
     },
     "235":{
         "title":"tellit",
         "Answer":"ill,let,lie,lit,tie,lilt,tell,tile,till,tilt,little,title",
-        "Hidetask":"ell,lite,tel,tet,",
+        "Hidetask":"ell,lite,tel,tet",
         "consume":25,
         "RewardWord":"11,6,6"
     },
     "236":{
         "title":"vietni",
         "Answer":"net,nit,ten,tie,tin,vet,vie,tine,vein,vent,invite,vine",
-        "Hidetask":"nevi,",
+        "Hidetask":"nevi",
         "consume":25,
         "RewardWord":"null"
     },
     "237":{
         "title":"lladro",
         "Answer":"all,lad,oar,old,rod,doll,load,lord,oral,road,roll,dollar,rad",
-        "Hidetask":"ado,aldol,droll,lard,lar,",
+        "Hidetask":"ado,aldol,droll,lard,lar",
         "consume":25,
         "RewardWord":"12,6,6"
     },
     "238":{
         "title":"ltgneh",
         "Answer":"gel,get,leg,let,net,ten,the,lent,then,length,hen",
-        "Hidetask":"gent,glen,het,",
+        "Hidetask":"gent,glen,het",
         "consume":25,
         "RewardWord":"null"
     },
     "239":{
         "title":"mellwo",
         "Answer":"elm,low,mow,owe,owl,woe,mole,mellow,well",
-        "Hidetask":"ell,meow,mew,",
+        "Hidetask":"ell,meow,mew",
         "consume":25,
         "RewardWord":"8,6,1"
     },
     "240":{
         "title":"fecani",
         "Answer":"ace,can,fan,fen,fin,ice,acne,cafe,cane,face,fine,nice,fiance,cine",
-        "Hidetask":"fain,",
+        "Hidetask":"fain",
         "consume":25,
         "RewardWord":"null"
     },
     "241":{
         "title":"uxedot",
         "Answer":"doe,dot,due,duo,ode,out,toe,dote,duet,tuxedo",
-        "Hidetask":"detox,outed,toed,tux,",
+        "Hidetask":"detox,outed,toed,tux",
         "consume":25,
         "RewardWord":"10,6,1"
     },
     "242":{
         "title":"osslif",
         "Answer":"oil,foil,loss,oils,silo,soil,floss,foils,soils,fossil,silos",
-        "Hidetask":"ifs,sol,soli,sols,foss,sis,",
+        "Hidetask":"ifs,sol,soli,sols,foss,sis",
         "consume":25,
         "RewardWord":"null"
     },
     "243":{
         "title":"pylpus",
         "Answer":"ply,pup,pus,sly,spy,plus,pulp,pups,supply,pulps",
-        "Hidetask":"pulpe,pulpy,ups,yup,pul,",
+        "Hidetask":"pulpe,pulpy,ups,yup,pul",
         "consume":25,
         "RewardWord":"null"
     },
     "244":{
         "title":"dotgoh",
         "Answer":"dog,dot,god,got,hog,hot,too,good,goth,hood,hoot,hotdog,tog",
-        "Hidetask":"doth,goo,ooh,hod,",
+        "Hidetask":"doth,goo,ooh,hod",
         "consume":25,
         "RewardWord":"12,6,6"
     },
     "245":{
         "title":"femaal",
         "Answer":"ale,elf,elm,lam,lea,fame,flea,lame,leaf,male,flame,aflame,meal",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "246":{
         "title":"cscero",
         "Answer":"ore,roe,core,ores,roes,rose,cores,score,soccer,sore",
-        "Hidetask":"eros,ors,secco,",
+        "Hidetask":"eros,ors,secco",
         "consume":25,
         "RewardWord":"9,6,1"
     },
     "247":{
         "title":"lthgif",
         "Answer":"fig,fit,hit,lit,flit,gift,gift,gilt,hilt,lift,fight,filth,flight,light",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "248":{
         "title":"lueprp",
         "Answer":"per,pup,pue,lure,lure,prep,pulp,pure,rule,purple,upper",
-        "Hidetask":"leu,pep,perp,pulper,",
+        "Hidetask":"leu,pep,perp,pulper",
         "consume":25,
         "RewardWord":"9,6,6"
     },
     "249":{
         "title":"beltlu",
         "Answer":"bet,but,let,tub,bell,belt,blue,bull,lute,tell,bullet,tube",
-        "Hidetask":"biuet,ell,leu,lube,",
+        "Hidetask":"biuet,ell,leu,lube",
         "consume":25,
         "RewardWord":"null"
     },
     "250":{
         "title":"hdined",
-        "Answer":"den,did,die,din,end,hen,hid,died,dine,hide,dined,hidden,hind,",
-        "Hidetask":"",
+        "Answer":"den,did,die,din,end,hen,hid,died,dine,hide,dined,hidden,hind",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "251":{
         "title":"vuryes",
         "Answer":"rev,rue,rye,sue,use,yes,revs,rues,ruse,sure,user,very,survey,ryes",
-        "Hidetask":"suer,",
+        "Hidetask":"suer",
         "consume":25,
         "RewardWord":"13,6,6"
     },
     "252":{
         "title":"hopibs",
         "Answer":"hip,his,hob,hop,sip,sob,hips,hops,posh,ship,shop,bishop,bio,hobs",
-        "Hidetask":"bios,bop,bops,ohs,ops,phi,phis,psi,sib,sop,",
+        "Hidetask":"bios,bop,bops,ohs,ops,phi,phis,psi,sib,sop",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1773,70 +1773,70 @@
     "254":{
         "title":"lcnaec",
         "Answer":"ace,ale,can,lea,acne,cane,clan,lace,lane,lance,cancel,clean,lean",
-        "Hidetask":"ceca,cecal,",
+        "Hidetask":"ceca,cecal",
         "consume":25,
         "RewardWord":"12,5,1"
     },
     "255":{
         "title":"revemo",
         "Answer":"eve,ore,rev,roe,ever,mere,more,move,over,rove,rove,mover,remove,veer",
-        "Hidetask":"vee,voe,",
+        "Hidetask":"vee,voe",
         "consume":25,
         "RewardWord":"null"
     },
     "256":{
         "title":"riding",
         "Answer":"dig,din,gin,rid,rig,ding,gird,grid,grin,rind,rigid,riding,grind,ring",
-        "Hidetask":"girn,irid,iring,",
+        "Hidetask":"girn,irid,iring",
         "consume":25,
         "RewardWord":"13,5,1"
     },
     "257":{
         "title":"lleyki",
-        "Answer":"elk,ilk,ill,key,lie,lye,kill,like,lily,likely,yell,",
+        "Answer":"elk,ilk,ill,key,lie,lye,kill,like,lily,likely,yell",
         "Hidetask":"ell,lek,yill,yell",
         "consume":25,
         "RewardWord":"null"
     },
     "258":{
         "title":"weakna",
-        "Answer":"awe,new,anew,knew,wake,wane,weak,awake,waken,awaken,wean,",
-        "Hidetask":"awn,kea,wan,",
+        "Answer":"awe,new,anew,knew,wake,wane,weak,awake,waken,awaken,wean",
+        "Hidetask":"awn,kea,wan",
         "consume":25,
         "RewardWord":"13,6,1"
     },
     "259":{
         "title":"uodist",
         "Answer":"dot,duo,its,out,sit,dots,dust,oust,outs,stud,studio,suit",
-        "Hidetask":"dos,buos,ids,odist,sod,sot,",
+        "Hidetask":"dos,buos,ids,odist,sod,sot",
         "consume":25,
         "RewardWord":"null"
     },
     "260":{
         "title":"rubnhc",
         "Answer":"bun,cub,cur,hub,nub,rub,run,urn,burn,curb,bunch,churn,brunch,bur",
-        "Hidetask":"buhr,chub,",
+        "Hidetask":"buhr,chub",
         "consume":25,
         "RewardWord":"13,6,6"
     },
     "261":{
         "title":"ittnek",
         "Answer":"ink,kin,kit,net,nit,ten,tie,tin,kite,knit,tent,tine,kitten,tint",
-        "Hidetask":"kine,tet,",
+        "Hidetask":"kine,tet",
         "consume":25,
         "RewardWord":"null"
     },
     "262":{
         "title":"fliyam",
-        "Answer":"ail,aim,fly,lam,lay,may,fail,mail,family,film,yam,",
-        "Hidetask":"amyi,filmy,flay,",
+        "Answer":"ail,aim,fly,lam,lay,may,fail,mail,family,film,yam",
+        "Hidetask":"amyi,filmy,flay",
         "consume":25,
         "RewardWord":"10,4,1"
     },
     "263":{
         "title":"denext",
         "Answer":"den,end,net,tee,ten,dent,need,next,teen,extend,tend",
-        "Hidetask":"dee,dene,teed,",
+        "Hidetask":"dee,dene,teed",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1850,14 +1850,14 @@
     "265":{
         "title":"erecar",
         "Answer":"ace,arc,are,car,ear,era,err,acre,care,race,rare,carer,racer,career,rear",
-        "Hidetask":"cee,cere,",
+        "Hidetask":"cee,cere",
         "consume":25,
         "RewardWord":"null"
     },
     "266":{
         "title":"ikysnn",
         "Answer":"ink,inn,kin,sin,ski,sky,inks,inky,inns,sink,skinny,skin,kins",
-        "Hidetask":"ins,yin,yins,",
+        "Hidetask":"ins,yin,yins",
         "consume":25,
         "RewardWord":"12,5,1"
     },
@@ -1871,21 +1871,21 @@
     "268":{
         "title":"sudloh",
         "Answer":"duo,old,hold,loud,lush,olds,sold,holds,should,shod",
-        "Hidetask":"dos,duos,ohs,sod,sol,hod,hols,hods,ludo,",
+        "Hidetask":"dos,duos,ohs,sod,sol,hod,hols,hods,ludo",
         "consume":25,
         "RewardWord":"10,4,1"
     },
     "269":{
         "title":"onotn",
         "Answer":"inn,ion,nit,not,tin,ton,into,noon,onto,onion,notion,too",
-        "Hidetask":"",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "270":{
         "title":"okectr",
         "Answer":"cot,cre,roe,rot,toe,coke,cork,rock,rote,tore,trek,rocket,core",
-        "Hidetask":"cor,toke,toker,",
+        "Hidetask":"cor,toke,toker",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1899,7 +1899,7 @@
     "272":{
         "title":"fieugr",
         "Answer":"fig,fir,fur,ire,rig,rue,rug,fire,urge,grief,figure,rife",
-        "Hidetask":"erg,ref,",
+        "Hidetask":"erg,ref",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1913,14 +1913,14 @@
     "274":{
         "title":"gikins",
         "Answer":"gin,ink,kin,sin,ski,gins,inks,king,sign,sing,sink,skin,kings,skiing,kins",
-        "Hidetask":"ins,",
+        "Hidetask":"ins",
         "consume":25,
         "RewardWord":"null"
     },
     "275":{
         "title":"ryhopt",
         "Answer":"hop,hot,opt,pot,pry,rot,thy,top,toy,try,port,trophy,pro",
-        "Hidetask":"hypo,eho,ropy,troy,typo,tyro,ort,",
+        "Hidetask":"hypo,eho,ropy,troy,typo,tyro,ort",
         "consume":25,
         "RewardWord":"null"
     },
@@ -1933,64 +1933,64 @@
     },
     "277":{
         "title":"lffewa",
-        "Answer":"ale,awe,awl,elf,few,law,lea,flaw,flea,flew,leaf,waffle,weal,",
-        "Hidetask":"",
+        "Answer":"ale,awe,awl,elf,few,law,lea,flaw,flea,flew,leaf,waffle,weal",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"12,6,6"
     },
     "278":{
         "title":"bfacir",
         "Answer":"air,arc,bar,bra,cab,car,far,fir,crab,crib,fair,fabric,rib",
-        "Hidetask":"barf,fid,",
+        "Hidetask":"barf,fid",
         "consume":25,
         "RewardWord":"null"
     },
     "279":{
         "title":"doyemc",
         "Answer":"cod,coy,doe,doe,dye,code,coed,come,demo,dome,mode,decoy,comedy,ode",
-        "Hidetask":"cyme,demy,yod,",
+        "Hidetask":"cyme,demy,yod",
         "consume":25,
         "RewardWord":"null"
     },
     "280":{
         "title":"saiwjg",
         "Answer":"gas,jag,jaw,jig,sag,sag,saw,wag,was,wig,jaws,jigs,jigs,swag,swig,wigs,jigsaw,wags",
-        "Hidetask":"ais,",
+        "Hidetask":"ais",
         "consume":25,
         "RewardWord":"null"
     },
     "281":{
         "title":"alydlb",
         "Answer":"all,bad,bay,dab,day,lab,lad,lay,ably,ally,bald,ball,badly,dally,baldly,lady",
-        "Hidetask":"aby,alb,yaldd,",
+        "Hidetask":"aby,alb,yaldd",
         "consume":25,
         "RewardWord":"null"
     },
     "282":{
         "title":"ftnnia",
         "Answer":"aft,ant,fan,fat,fin,fit,inn,nit,tan,tin,faint,infant,fiat",
-        "Hidetask":"fain,tain,",
+        "Hidetask":"fain,tain",
         "consume":25,
         "RewardWord":"null"
     },
     "283":{
         "title":"trydus",
         "Answer":"dry,rut,sty,dust,duty,rust,ruts,stud,dusty,rusty,study,sturdy,try",
-        "Hidetask":"yurt,yurts,",
+        "Hidetask":"yurt,yurts",
         "consume":25,
         "RewardWord":"null"
     },
     "284":{
         "title":"kcotpe",
         "Answer":"cop,cot,opt,pet,pot,toe,top,cope,kept,peck,peck,poet,poke,pocket,coke",
-        "Hidetask":"kep,pock,toke,cote,coke,",
+        "Hidetask":"kep,pock,toke,cote,coke",
         "consume":25,
         "RewardWord":"13,6,1"
     },
     "285":{
         "title":"imrnpf",
         "Answer":"fin,fir,for,ion,nor,rim,firm,form,from,iron,norm,minor,inform,morn",
-        "Hidetask":"fro,",
+        "Hidetask":"fro",
         "consume":25,
         "RewardWord":"null"
     },
@@ -2004,7 +2004,7 @@
     "287":{
         "title":"feromr",
         "Answer":"err,foe,for,ore,roe,fore,form,from,wore,former,reform",
-        "Hidetask":"fro,frore,ref,",
+        "Hidetask":"fro,frore,ref",
         "consume":25,
         "RewardWord":"10,6,6"
     },
@@ -2018,84 +2018,84 @@
     "289":{
         "title":"rptyte",
         "Answer":"per,pet,pry,rye,try,prey,pyre,type,pretty,petty,yet",
-        "Hidetask":"pert,tet,yett,",
+        "Hidetask":"pert,tet,yett",
         "consume":25,
         "RewardWord":"10,5,1"
     },
     "290":{
         "title":"sreffu",
         "Answer":"fur,rue,sue,use,furs,fuse,rues,ruff,ruse,sure,surf,ruffs,suffer,user",
-        "Hidetask":"effs,ref,refs,suer,serf,",
+        "Hidetask":"effs,ref,refs,suer,serf",
         "consume":25,
         "RewardWord":"null"
     },
     "291":{
         "title":"btertu",
         "Answer":"bet,but,rub,rue,rut,tub,butt,true,tube,brute,rebut,tuber,utter,butter,bur",
-        "Hidetask":"butte,tet,",
+        "Hidetask":"butte,tet",
         "consume":25,
         "RewardWord":"14,6,6"
     },
     "292":{
         "title":"lobtte",
         "Answer":"bet,let,lot,toe,tot,belt,blot,bolt,lobe,bottle,tote",
-        "Hidetask":"lob,tet,",
+        "Hidetask":"lob,tet",
         "consume":25,
         "RewardWord":"null"
     },
     "293":{
         "title":"rostll",
         "Answer":"lot,rot,lost,lots,roll,rots,slot,sort,toll,rolls,tolls,tolls,troll,trolls",
-        "Hidetask":"ors,sol,sot,",
+        "Hidetask":"ors,sol,sot",
         "consume":25,
         "RewardWord":"null"
     },
     "294":{
         "title":"eferob",
         "Answer":"bee,fee,fob,for,orb,ore,rob,roe,beef,beer,bore,fore,free,reef,robe,before,foe",
-        "Hidetask":"forb,fro,ref,fer,",
+        "Hidetask":"forb,fro,ref,fer",
         "consume":25,
         "RewardWord":"16,6,6"
     },
     "295":{
         "title":"erfiyv",
         "Answer":"fir,fry,ire,ivy,rev,fire,five,rife,very,fiery,reify,verify,vie",
-        "Hidetask":"fie,fiver,ref,rive,",
+        "Hidetask":"fie,fiver,ref,rive",
         "consume":25,
         "RewardWord":"null"
     },
     "1001":{
         "title":"orwds",
-        "Answer":"so,rods,rows,sow,sword,words,/do,or,rod,eow,word",
-        "Hidetask":"",
+        "Answer":"do,or,row,rod,word,sword,words",
+        "Hidetask":"null",
         "consume":25,
         "RewardWord":"null"
     },
     "1002":{
         "title":"hgtos",
         "Answer":"go,so,to,got,hog,hot,gosh,host,shot,ghost,hogs",
-        "Hidetask":"goth,goths,hots,sot,ohs,",
+        "Hidetask":"goth,goths,hots,sot,ohs",
         "consume":25,
         "RewardWord":"null"
     },
     "1003":{
         "title":"cbaihn",
-        "Answer":"ban,bin,cab,can,chin,inch,cabin,chain,chain",
-        "Hidetask":"chi,hic,nab,nib,",
+        "Answer":"ban,bin,cab,can,chin,chai,inch,cabin,chai",
+        "Hidetask":"chi,hic,nab,nib",
         "consume":25,
         "RewardWord":"null"
     },
     "1004":{
         "title":"bdeerg",
-        "Answer":"breed,bed,beg,bred,bee,deer,/red,deer,edge,reed,greed",
-        "Hidetask":"deb,dee,edger,dreg,ree,",
+        "Answer":"breed,bed,beg,bred,red,deer,edge,reed,greed",
+        "Hidetask":"deb,edger,bee,dreg,ree,deer",
         "consume":25,
         "RewardWord":"null"
     },
     "1005":{
         "title":"speeth",
-        "Answer":"pest,pet,pets,seep,sheep,steep,step,/see,set,she,tee,the,tees,sheet,these",
-        "Hidetask":"het,thesp,",
+        "Answer":"pest,pet,pets,seep,sheep,steep,step,set,she,tee,the,tees,sheet,these",
+        "Hidetask":"het,thesp,see",
         "consume":25,
         "RewardWord":"null"
     }

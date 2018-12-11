@@ -19,7 +19,7 @@ cc.Class({
         this._allPosList.push(this.getNodeInfo(this.posList5));
         this._allPosList.push(this.getNodeInfo(this.posList6));
         cc.gameConfig.POS_LIST =this._allPosList;
-        console.log('cc.gameConfig.POS_LIST',cc.gameConfig.POS_LIST);
+        // console.log('cc.gameConfig.POS_LIST',cc.gameConfig.POS_LIST);
     },
     // LIFE-CYCLE CALLBACKS:
     getNodeInfo:function(node){

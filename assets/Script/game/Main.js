@@ -64,6 +64,7 @@ cc.Class({
         target.OpenSpecialLevel();
     },
     OpenSpecialLevel:function(){
+        console.log('getTipsLevel == ',cc.tools.gameManager.getTipsLevel());
         console.log('OPEN_SPECIAl_LEVEL 开启特殊关卡@!');
         this.openNewLevel();
     },
