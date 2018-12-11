@@ -4,6 +4,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        posList0:cc.Node,
         posList1:cc.Node,
         posList2:cc.Node,
         posList3:cc.Node,
@@ -22,6 +23,7 @@ cc.Class({
         _allPosList:[],
     },
     initPoslist:function(){
+        this._allPosList.push(this.getNodeInfo(this.posList0));
         this._allPosList.push(this.getNodeInfo(this.posList1));
         this._allPosList.push(this.getNodeInfo(this.posList2));
         this._allPosList.push(this.getNodeInfo(this.posList3));

@@ -202,7 +202,7 @@ gameManager.getWordListPos = function(num){
 }
 //获取当前完成列表坐标位置列表
 gameManager.getFinishWordListPos = function(num){
-    return cc.gameConfig.FINISH_POS_LIST[num-3];
+    return cc.gameConfig.FINISH_POS_LIST[num-2];
 }
 //更新隐藏任务完成数
 gameManager.updateHideTaskCurFinishNumber = function(){
